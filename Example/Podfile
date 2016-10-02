@@ -1,5 +1,9 @@
 use_frameworks!
 
-target 'GraphicsRenderer_Example' do
+target 'iOSRenderer' do
   pod 'GraphicsRenderer', :path => '../'
+end
+
+target 'MacOSRenderer' do
+  pod 'GraphicsRenderer', :path => '../'    
 end
