@@ -7,18 +7,23 @@
 //
 
 import UIKit
+import GraphicsRenderer
+
+
+class DrawableView: UIView {
+    
+    @IBOutlet weak var imageView: UIImageView!
+    
+    override func draw(_ rect: CGRect) {
+        super.draw(rect)
+
+        
+    }
+    
+}
+
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+    @IBOutlet var drawableView: DrawableView!
 }
 

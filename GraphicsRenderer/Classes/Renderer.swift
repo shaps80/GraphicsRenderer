@@ -8,6 +8,11 @@
 
 import UIKit
 
+public enum RendererContextError: Error {
+    case missingContext
+    case mainThreadRequired
+}
+
 public protocol RendererFormat {
     static func `default`() -> Self
     var bounds: CGRect { get }
@@ -26,12 +31,6 @@ public protocol RendererContext {
     func clip(to rect: CGRect)
 }
 
-extension RendererContext {
-    internal init(format: Format, cgContext: CGContext) {
-        self.init(format: format, cgContext: cgContext)
-    }
-}
-
 public protocol Renderer {
     associatedtype Context: RendererContext
     
@@ -40,4 +39,16 @@ public protocol Renderer {
     
     static func context(with format: Context.Format) -> CGContext?
     static func prepare(_ context: CGContext, with rendererContext: Context)
+}
+
+extension Renderer {
+    
+    public var allowsImageOutput: Bool {
+        return false
+    }
+    
+    public static func context(with format: ViewRendererFormat) -> CGContext? {
+        return nil
+    }
+    
 }

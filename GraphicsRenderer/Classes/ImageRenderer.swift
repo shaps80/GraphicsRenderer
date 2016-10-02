@@ -38,29 +38,38 @@ public struct ImageRendererContext: RendererContext {
     }
 }
 
-public enum RendererContextError: Error {
-    case missingContext
-}
-
 public struct ImageRenderer: Renderer {
     public typealias Context = ImageRendererContext
     
     public var allowsImageOutput: Bool = true
     public var format: ImageRendererFormat
     
-    init(size: CGSize, format: ImageRendererFormat? = nil) {
+    public init(size: CGSize, format: ImageRendererFormat? = nil) {
         self.format = format ?? ImageRendererFormat(bounds: CGRect(origin: .zero, size: size))
     }
     
+    public static func prepare(_ context: CGContext, with rendererContext: ImageRendererContext) { }
     public static func context(with format: ImageRendererFormat) -> CGContext? {
         UIGraphicsBeginImageContextWithOptions(format.bounds.size, format.opaque, format.scale)
         return UIGraphicsGetCurrentContext()
     }
     
-    public static func prepare(_ context: CGContext, with rendererContext: ImageRendererContext) { }
+    public func image(actions: (Context) -> Void) -> UIImage {
+        var image: UIImage?
+        
+        try? runDrawingActions(actions) { context in
+            image = context.currentImage
+        }
+        
+        return image!
+    }
     
-    public func image(drawingActions: (ImageRendererContext) -> Void) {
-        try! runDrawingActions(drawingActions)
+    public func pngData(actions: (Context) -> Void) -> Data {
+        return Data()
+    }
+    
+    public func jpegData(withCompressionQuality compressionQuality: CGFloat, actions: (Context) -> Void) -> Data {
+        return Data()
     }
     
     internal func runDrawingActions(_ drawingActions: (Context) -> Void, completionActions: ((Context) -> Void)? = nil) throws {
@@ -74,10 +83,7 @@ public struct ImageRenderer: Renderer {
         drawingActions(context)
         completionActions?(context)
         
-        if UIGraphicsGetImageFromCurrentImageContext() == nil {
-            UIGraphicsPopContext()
-        } else {
-            UIGraphicsEndImageContext()
-        }
+        let image = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
     }
 }
