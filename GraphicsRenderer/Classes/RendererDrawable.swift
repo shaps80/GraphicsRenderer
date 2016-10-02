@@ -6,12 +6,6 @@
 //  Copyright © 2016 CocoaPods. All rights reserved.
 //
 
-#if os(OSX)
-    import AppKit
-#else
-    import UIKit
-#endif
-
 extension RendererDrawable {
     
     /// <#Description#>

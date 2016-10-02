@@ -6,12 +6,6 @@
 //  Copyright © 2016 CocoaPods. All rights reserved.
 //
 
-#if os(OSX)
-    import AppKit
-#else
-    import UIKit
-#endif
-
 /**
  *  Represents an image renderer format
  */
@@ -44,7 +38,7 @@ public struct ImageRendererFormat: RendererFormat {
      
      - returns: A new format
      */
-    init(bounds: CGRect, opaque: Bool = false, scale: CGFloat = UIScreen.main.scale) {
+    init(bounds: CGRect, opaque: Bool = false, scale: CGFloat = screenScale()) {
         self.bounds = bounds
         self.opaque = opaque
         self.scale = scale
@@ -63,9 +57,21 @@ public struct ImageRendererContext: RendererContext {
     public let cgContext: CGContext
     
     /// Returns a UIImage representing the current state of the renderer's CGContext
-    public var currentImage: UIImage {
-        return UIGraphicsGetImageFromCurrentImageContext()!
+    public var currentImage: Image {
+        #if os(OSX)
+            let image = drawingImage
+            image?.lockFocus()
+            let rep = NSBitmapImageRep(focusedViewRect: CGRect(origin: .zero, size: image?.size ?? .zero))!
+            image?.unlockFocus()
+            return NSImage(cgImage: rep.cgImage!, size: image?.size ?? .zero)
+        #else
+            return UIGraphicsGetImageFromCurrentImageContext()!
+        #endif
     }
+    
+    #if os(OSX)
+    private var drawingImage: Image?
+    #endif
     
     /**
      Creates a new renderer context
@@ -113,16 +119,9 @@ public struct ImageRenderer: Renderer {
     public static func prepare(_ context: CGContext, with rendererContext: ImageRendererContext) { }
     
     /**
-     Returns a newly configured CGContext
-     
-     - parameter format: The format options to use for this context
-     
-     - returns: A new CGContext
+     By default this returns nil
      */
-    public static func context(with format: ImageRendererFormat) -> CGContext? {
-        UIGraphicsBeginImageContextWithOptions(format.bounds.size, format.opaque, format.scale)
-        return UIGraphicsGetCurrentContext()
-    }
+    public static func context(with format: ImageRendererFormat) -> CGContext? { return nil }
 
     /**
      Returns a new image with the specified drawing actions applied
@@ -131,8 +130,8 @@ public struct ImageRenderer: Renderer {
      
      - returns: A new image
      */
-    public func image(actions: (Context) -> Void) -> UIImage {
-        var image: UIImage?
+    public func image(actions: (Context) -> Void) -> Image {
+        var image: Image?
         
         try? runDrawingActions(actions) { context in
             image = context.currentImage
@@ -149,7 +148,8 @@ public struct ImageRenderer: Renderer {
      - returns: A PNG data representation
      */
     public func pngData(actions: (Context) -> Void) -> Data {
-        return data(png: true, quality: 1.0, actions: actions)
+        let image = self.image(actions: actions)
+        return image.pngRepresentation()!
     }
     
     /**
@@ -160,30 +160,28 @@ public struct ImageRenderer: Renderer {
      - returns: A JPEG data representation
      */
     public func jpegData(withCompressionQuality compressionQuality: CGFloat, actions: (Context) -> Void) -> Data {
-        return data(png: false, quality: compressionQuality, actions: actions)
-    }
-    
-    private func data(png: Bool, quality: CGFloat, actions: (Context) -> Void) -> Data {
-        var image: UIImage!
-        
-        try? runDrawingActions(actions) { (context) in
-            image = context.currentImage
-        }
-        
-        return png ? UIImagePNGRepresentation(image)! : UIImageJPEGRepresentation(image, quality)!
+        let image = self.image(actions: actions)
+        return image.jpgRepresentation(quality: compressionQuality)!
     }
     
     private func runDrawingActions(_ drawingActions: (Context) -> Void, completionActions: ((Context) -> Void)? = nil) throws {
-        guard let cgContext = ImageRenderer.context(with: format) else {
-            throw RendererContextError.missingContext
-        }
+        #if os(OSX)
+            let image = NSImage(size: format.bounds.size)
+            image.lockFocus()
+            let cgContext = CGContext.current!
+            let context = Context(format: self.format, cgContext: cgContext)
+            drawingActions(context)
+            completionActions?(context)
+            image.unlockFocus()
+        #endif
         
-        let context = Context(format: format, cgContext: cgContext)
-        ImageRenderer.prepare(cgContext, with: context)
-        
-        drawingActions(context)
-        completionActions?(context)
-       
-        UIGraphicsEndImageContext()
+        #if os(iOS)
+            UIGraphicsBeginImageContextWithOptions(format.bounds.size, format.opaque, format.scale)
+            let cgContext = CGContext.current!
+            let context = Context(format: self.format, cgContext: cgContext)
+            drawingActions(context)
+            completionActions?(context)
+            UIGraphicsEndImageContext()
+        #endif
     }
 }

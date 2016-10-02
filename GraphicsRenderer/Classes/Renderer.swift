@@ -6,12 +6,6 @@
 //  Copyright © 2016 CocoaPods. All rights reserved.
 //
 
-#if os(OSX)
-    import AppKit
-#else
-    import UIKit
-#endif
-
 /**
  Represents a Renderer error
  
@@ -67,8 +61,10 @@ extension CGContext: RendererDrawable {
     }
 }
 
+#if os(iOS) || os(tvOS)
 @available(iOS 10.0, *)
 extension UIGraphicsImageRendererContext: RendererDrawable { }
+#endif
 
 
 /**

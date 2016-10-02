@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  GraphicsRenderer: 490b6d0db21326c193646027e1203e0d26ceab5f
+  GraphicsRenderer: 84411f0eb1d2ed0a1adb44efd39947696c7a9074
 
 PODFILE CHECKSUM: b9ef8a32566ebbc5a9c2922d215faee1d43d03a3
 

@@ -22,8 +22,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
         let data = ImageRenderer(size: CGSize(width: 100, height: 100)).pngData { context in
             let rect = context.format.bounds
             
@@ -36,6 +34,9 @@ class ViewController: UIViewController {
             
             UIColor.red.setStroke()
             context.stroke(rect.insetBy(dx: 5, dy: 5))
+            
+            let image = context.currentImage
+            print(image)
         }
         
         var url = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
