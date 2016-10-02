@@ -1,0 +1,16 @@
+PODS:
+  - GraphicsRenderer (0.1.0)
+
+DEPENDENCIES:
+  - GraphicsRenderer (from `../`)
+
+EXTERNAL SOURCES:
+  GraphicsRenderer:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GraphicsRenderer: 6aac496c8bdb3878d6ef9a2033239452911ad8ea
+
+PODFILE CHECKSUM: 9553d240ddefb5602b3300c89c255d91bfc998a8
+
+COCOAPODS: 1.0.1
