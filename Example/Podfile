@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'GraphicsRenderer_Example' do
+  pod 'GraphicsRenderer', :path => '../'
+
+  target 'GraphicsRenderer_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
