@@ -15,11 +15,11 @@
     }
     
     extension NSImage {
-        public func pngRepresentation() -> Data? {
+        internal func pngRepresentation() -> Data? {
             return NSBitmapImageRep(data: tiffRepresentation!)?.representation(using: .PNG, properties: [:])
         }
         
-        public func jpgRepresentation(quality: CGFloat) -> Data? {
+        internal func jpgRepresentation(quality: CGFloat) -> Data? {
             return NSBitmapImageRep(data: tiffRepresentation!)?.representation(using: .JPEG, properties: [NSImageCompressionFactor: quality])
         }
     }
@@ -32,11 +32,11 @@
     }
     
     extension UIImage {
-        public func pngRepresentation() -> Data? {
+        internal func pngRepresentation() -> Data? {
             return UIImagePNGRepresentation(self)
         }
         
-        public func jpgRepresentation(quality: CGFloat) -> Data? {
+        internal func jpgRepresentation(quality: CGFloat) -> Data? {
             return UIImageJPEGRepresentation(self, quality)
         }
     }
@@ -44,7 +44,7 @@
 
 extension CGContext {
     
-    public static var current: CGContext? {
+    internal static var current: CGContext? {
         #if os(OSX)
             return NSGraphicsContext.current()!.cgContext
         #else

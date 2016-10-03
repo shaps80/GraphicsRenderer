@@ -1,4 +1,3 @@
-
 Pod::Spec.new do |s|
     s.name             = "GraphicsRenderer"
     s.version          = "1.0.0"
