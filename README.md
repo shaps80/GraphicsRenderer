@@ -65,12 +65,18 @@ try? PDFRenderer(bounds: bounds).writePDF(to: url) { context in
 }
 ```
 
-Note: When working with PDFs you don't need to worry about creating the PDF, ending pages or even closing the PDF. This is all handled automatically for you.
+## Drawing
+
+When working with PDFs you don't need to worry about creating the PDF, ending pages or even closing the PDF. This is all handled automatically for you.
 
 The `context` returned to you inside the drawing block holds onto 2 key pieces of information. (Just like `UIGraphicsRendererContext`)
 
 `format` -- Provides information about bounds, scale, etc..
 `cgContext` --  The underlying `CGContext`
+
+Final note, the `stroke` methods are optimized to work the same way as the Apple implementation, in that they automatically insetBy 0.5 for you. If you don't want this behavious automatically, simply use the usual methods available on `CGContext`. 
+
+e.g. `cgContext.stroke(rect: myRect)`
 
 ## Requirements
 
