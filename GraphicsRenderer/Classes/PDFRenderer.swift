@@ -98,7 +98,7 @@ public final class PDFRendererContext: RendererContext {
         var info = pageInfo
         info[kCGPDFContextMediaBox as String] = bounds
         
-        guard let pageInfo = info as? CFDictionary else { fatalError("Document info couldn't be converted to CFDictionary") }
+        let pageInfo = info as CFDictionary
         
         endPageIfOpen()
         cgContext.beginPDFPage(pageInfo)
@@ -116,7 +116,7 @@ public final class PDFRendererContext: RendererContext {
     ///   - url: The url to link to
     ///   - rect: The rect representing the link
     public func setURL(_ url: URL, for rect: CGRect) {
-        guard let url = url as? CFURL else { fatalError("url couldn't be converted to CFURL") }
+        let url = url as CFURL
         cgContext.setURL(url, for: rect)
     }
     
@@ -126,7 +126,7 @@ public final class PDFRendererContext: RendererContext {
     ///   - name: A destination name
     ///   - point: A location in the current page
     public func addDestination(withName name: String, at point: CGPoint) {
-        guard let name = name as? CFString else { fatalError("name couldn't be converted to CFString") }
+        let name = name as CFString
         cgContext.addDestination(name, at: point)
     }
     
@@ -136,7 +136,7 @@ public final class PDFRendererContext: RendererContext {
     ///   - name: A destination name
     ///   - rect: A rect in the current page
     public func setDestinationWithName(_ name: String, for rect: CGRect) {
-        guard let name = name as? CFString else { fatalError("name couldn't be converted to CFString") }
+        let name = name as CFString
         cgContext.setDestination(name, for: rect)
     }
     
