@@ -9,12 +9,29 @@
 
 GraphicsRenderer is designed to a drop-in UIGraphicsRenderer port. For this reason, all function names are matched to make it easy to swap out a later date.
 
-`UIGraphicsImageRenderer` > `ImageRenderer`
-`UIGraphicsPDFRenderer` > `PDFRenderer`
+```swift
+UIGraphicsRendererFormat > RendererFormat
+UIGraphicsImageRendererFormat > ImageRendererFormat
+UIGraphicsPDFRendererFormat > PDFRendererFormat
+
+UIGraphicsRendererContext > RendererContext
+UIGraphicsImageRendererContext > PDFRendererContext
+UIGraphicsPDFRendererContext > PDFRendererContext
+```
+
+The classes you'll mostly work with though are:
+
+```swift
+UIGraphicsRenderer > Renderer
+UIGraphicsImageRenderer > ImageRenderer
+UIGraphicsPDFRenderer > PDFRenderer
+```
 
 GraphicsRenderer is also cross-platform with iOS and macOS demo projects included in the repo.
 
 GraphicsRenderer matches the entire API currently available from UIGraphicsRenderer, however to make it work nicely with all platforms, it also includes some additional convenience's, like `flipping` the `context`. 
+
+GraphicsRenderer is also protocol based, which makes it more Swifty and allows for some nice generics driven integration as you can see in the `performDrawing()` example.
 
 ## InkKit
 
