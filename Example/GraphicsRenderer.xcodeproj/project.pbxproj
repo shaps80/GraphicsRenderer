@@ -35,7 +35,6 @@
 		549A32821DA16E6C00B1BFC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		549A32841DA16E6C00B1BFC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		549A32881DA1750600B1BFC9 /* Platforms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Platforms.swift; sourceTree = "<group>"; };
-		558E0B1A4A8D2D155840E581 /* Pods-GraphicsRenderer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraphicsRenderer_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GraphicsRenderer_Tests/Pods-GraphicsRenderer_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* iOSRenderer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSRenderer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,14 +45,11 @@
 		650EA884452FF0115295A09E /* GraphicsRenderer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GraphicsRenderer.podspec; path = ../GraphicsRenderer.podspec; sourceTree = "<group>"; };
 		6EC3979EA0DF2B072DAE7AB1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		796FB5104EC8E8C01FAFEF0A /* Pods_GraphicsRenderer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GraphicsRenderer_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9831DEE221BB2203D28E97EB /* Pods-GraphicsRenderer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraphicsRenderer_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GraphicsRenderer_Tests/Pods-GraphicsRenderer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		9B018AF547F86940E43E829E /* Pods-MacOSRenderer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MacOSRenderer.release.xcconfig"; path = "Pods/Target Support Files/Pods-MacOSRenderer/Pods-MacOSRenderer.release.xcconfig"; sourceTree = "<group>"; };
 		A712A04ED1E4FB2CFD16DB87 /* Pods_iOSRenderer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSRenderer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A8903F94BD63EEF111A0861D /* Pods-GraphicsRenderer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraphicsRenderer_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-GraphicsRenderer_Example/Pods-GraphicsRenderer_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D1D1C6CA4DA61492E139CEA0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E774EE06897759E5ACBC9C29 /* Pods_MacOSRenderer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MacOSRenderer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F67402623BB64D57DAC806FD /* Pods-MacOSRenderer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MacOSRenderer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MacOSRenderer/Pods-MacOSRenderer.debug.xcconfig"; sourceTree = "<group>"; };
-		FCD6174DEF65F91F3F6FCD2E /* Pods-GraphicsRenderer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraphicsRenderer_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GraphicsRenderer_Example/Pods-GraphicsRenderer_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,10 +100,6 @@
 		573C44A3899644258212827C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FCD6174DEF65F91F3F6FCD2E /* Pods-GraphicsRenderer_Example.debug.xcconfig */,
-				A8903F94BD63EEF111A0861D /* Pods-GraphicsRenderer_Example.release.xcconfig */,
-				9831DEE221BB2203D28E97EB /* Pods-GraphicsRenderer_Tests.debug.xcconfig */,
-				558E0B1A4A8D2D155840E581 /* Pods-GraphicsRenderer_Tests.release.xcconfig */,
 				F67402623BB64D57DAC806FD /* Pods-MacOSRenderer.debug.xcconfig */,
 				9B018AF547F86940E43E829E /* Pods-MacOSRenderer.release.xcconfig */,
 				4D65F194DF0ECCF20153595A /* Pods-iOSRenderer.debug.xcconfig */,
