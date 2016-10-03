@@ -15,8 +15,9 @@ class ViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let image = ImageRenderer(size: CGSize(width: 100, height: 100)).image { context in
+    
+        let format = ImageRendererFormat.default() // will default to a flipped context
+        let image = ImageRenderer(size: CGSize(width: 100, height: 100), format: format).image { context in
             let rect = context.format.bounds
             
             NSColor.white.setFill()
@@ -38,4 +39,3 @@ class ViewController: NSViewController {
     }
 
 }
-

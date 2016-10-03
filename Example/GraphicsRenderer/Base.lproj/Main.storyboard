@@ -9,7 +9,7 @@
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="GraphicsRenderer_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="iOSRenderer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -18,35 +18,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4fe-Sg-Zy7" customClass="DrawableView" customModule="GraphicsRenderer_Example" customModuleProvider="target">
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Eie-au-llj">
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="100" id="GAD-og-TKC"/>
-                                            <constraint firstAttribute="height" constant="100" id="pvc-BY-JAh"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Eie-au-llj">
                                 <constraints>
-                                    <constraint firstItem="Eie-au-llj" firstAttribute="centerY" secondItem="4fe-Sg-Zy7" secondAttribute="centerY" id="3Hw-gI-RXS"/>
-                                    <constraint firstItem="Eie-au-llj" firstAttribute="centerX" secondItem="4fe-Sg-Zy7" secondAttribute="centerX" id="Sy5-5c-JPY"/>
+                                    <constraint firstAttribute="width" constant="100" id="GAD-og-TKC"/>
+                                    <constraint firstAttribute="height" constant="100" id="pvc-BY-JAh"/>
                                 </constraints>
-                                <connections>
-                                    <outlet property="imageView" destination="Eie-au-llj" id="dM5-0b-BvW"/>
-                                </connections>
-                            </view>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="4fe-Sg-Zy7" secondAttribute="trailing" id="GPD-LA-xOc"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="4fe-Sg-Zy7" secondAttribute="bottom" id="Z4a-GO-NEe"/>
-                            <constraint firstItem="4fe-Sg-Zy7" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="fcB-6W-Bqf"/>
-                            <constraint firstItem="4fe-Sg-Zy7" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="w06-uE-gYQ"/>
+                            <constraint firstItem="Eie-au-llj" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="IAe-ty-j2i"/>
+                            <constraint firstItem="Eie-au-llj" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="lKg-CN-mk7"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="drawableView" destination="4fe-Sg-Zy7" id="NvQ-bS-ChV"/>
+                        <outlet property="imageView" destination="Eie-au-llj" id="df8-X5-XgV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

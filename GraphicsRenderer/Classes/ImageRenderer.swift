@@ -12,16 +12,20 @@
 public struct ImageRendererFormat: RendererFormat {
 
     /**
-     Returns a default format, configured for this device
+     Returns a default format, configured for this device. On OSX, this will flip the context to match iOS drawing.
      
      - returns: A new format
      */
     public static func `default`() -> ImageRendererFormat {
-        return ImageRendererFormat(flipped: false)
+        #if os(OSX)
+            return ImageRendererFormat(flipped: true)
+        #else
+            return ImageRendererFormat(flipped: false)
+        #endif
     }
     
     /// Returns the bounds for this format
-    public let bounds: CGRect
+    public var bounds: CGRect
     
     /// Get/set whether or not the resulting image should be opaque
     public var opaque: Bool
@@ -108,24 +112,12 @@ public struct ImageRenderer: Renderer {
      - returns: A new image renderer
      */
     public init(size: CGSize, format: ImageRendererFormat? = nil) {
-        var flipped = false
-        
-        #if os(OSX)
-            flipped = true
-        #endif
-        
-        self.format = format ?? ImageRendererFormat(bounds: CGRect(origin: .zero, size: size), flipped: flipped)
+        guard size != .zero else { fatalError("size cannot be zero") }
+        let bounds = CGRect(origin: .zero, size: size)
+        let opaque = format?.opaque ?? false
+        let scale = format?.scale ?? screenScale()
+        self.format = ImageRendererFormat(bounds: bounds, opaque: opaque, scale: scale, flipped: format?.isFlipped ?? false)
     }
-    
-    /**
-     By default this method does nothing.
-     */
-    public static func prepare(_ context: CGContext, with rendererContext: ImageRendererContext) { }
-    
-    /**
-     By default this returns nil
-     */
-    public static func context(with format: ImageRendererFormat) -> CGContext? { return nil }
 
     /**
      Returns a new image with the specified drawing actions applied
@@ -182,7 +174,13 @@ public struct ImageRenderer: Renderer {
         #if os(iOS)
             UIGraphicsBeginImageContextWithOptions(format.bounds.size, format.opaque, format.scale)
             let cgContext = CGContext.current!
-            let context = Context(format: self.format, cgContext: cgContext, drawableImage: nil)
+            
+            if format.isFlipped {
+                let transform = CGAffineTransform(a: 1, b: 0, c: 0, d: -1, tx: 0, ty: format.bounds.height)
+                cgContext.concatenate(transform)
+            }
+            
+            let context = Context(format: self.format, cgContext: cgContext)
             drawingActions(context)
             completionActions?(context)
             UIGraphicsEndImageContext()

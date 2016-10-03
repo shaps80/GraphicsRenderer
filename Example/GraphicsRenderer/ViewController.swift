@@ -10,14 +10,9 @@ import UIKit
 import GraphicsRenderer
 
 
-class DrawableView: UIView {
-    @IBOutlet weak var imageView: UIImageView!
-}
-
-
 class ViewController: UIViewController {
     
-    @IBOutlet var drawableView: DrawableView!
+    @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,11 +27,15 @@ class ViewController: UIViewController {
             let frame = CGRect(x: 10, y: 10, width: 40, height: 40)
             context.stroke(frame)
             
+            var url = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+            url = url?.appendingPathComponent("image.png")
+            try? context.currentImage.pngRepresentation()!.write(to: url!)
+            
             UIColor.red.setStroke()
             context.stroke(rect.insetBy(dx: 5, dy: 5))
         }
         
-        drawableView.imageView.image = image
+        imageView.image = image
     }
     
 }

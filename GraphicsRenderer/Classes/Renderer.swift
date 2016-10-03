@@ -80,23 +80,6 @@ public protocol Renderer {
     
     /// Returns true if this renderer may be used to generate CGImageRefs
     var allowsImageOutput: Bool { get }
-    
-    /**
-     Returns a new CGContext to be used for this renderer
-     
-     - parameter format: The format used to configure this context
-     
-     - returns: The resulting CGContext
-     */
-    static func context(with format: Context.Format) -> CGContext?
-    
-    /**
-     Provides an opportunity to apply any additional configuration options
-     
-     - parameter context:         The associated CGContext
-     - parameter rendererContext: The associated RendererContext
-     */
-    static func prepare(_ context: CGContext, with rendererContext: Context)
 }
 
 extension Renderer {
