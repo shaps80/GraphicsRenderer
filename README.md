@@ -7,6 +7,8 @@
 
 ## Introduction
 
+<img src="sample.png" />
+
 GraphicsRenderer is designed to a drop-in UIGraphicsRenderer port. For this reason, all function names are matched to make it easy to swap out a later date.
 
 ```swift
