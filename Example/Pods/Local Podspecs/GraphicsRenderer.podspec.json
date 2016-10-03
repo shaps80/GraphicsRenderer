@@ -1,7 +1,7 @@
 {
   "name": "GraphicsRenderer",
   "version": "1.0.0",
-  "summary": "UIGraphicsRenderer -- CrossPlatform, Swift 3, Image, PDF and View Drawing",
+  "summary": "A drop-in UIGraphicsRenderer port -- CrossPlatform, Swift 3, Image & PDF",
   "homepage": "https://github.com/shaps80/GraphicsRenderer",
   "license": "MIT",
   "authors": {
