@@ -9,7 +9,7 @@
 /**
  *  Represents an image renderer format
  */
-public struct ImageRendererFormat: RendererFormat {
+public final class ImageRendererFormat: RendererFormat {
 
     /**
      Returns a default format, configured for this device. On OSX, this will flip the context to match iOS drawing.
@@ -45,18 +45,25 @@ public struct ImageRendererFormat: RendererFormat {
      
      - returns: A new format
      */
-    public init(bounds: CGRect = .zero, opaque: Bool = false, scale: CGFloat = screenScale(), flipped: Bool) {
+    internal init(bounds: CGRect, opaque: Bool = false, scale: CGFloat = screenScale(), flipped: Bool) {
         self.bounds = bounds
         self.opaque = opaque
         self.scale = scale
         self.isFlipped = flipped
+    }
+    
+    public init(opaque: Bool = false, scale: CGFloat = screenScale(), flipped: Bool) {
+        self.bounds = .zero
+        self.scale = scale
+        self.isFlipped = flipped
+        self.opaque = opaque
     }
 }
 
 /**
  *  Represents a new renderer context
  */
-public struct ImageRendererContext: RendererContext {
+public final class ImageRendererContext: RendererContext {
     
     /// The associated format
     public let format: ImageRendererFormat
@@ -92,7 +99,7 @@ public struct ImageRendererContext: RendererContext {
 /**
  *  Represents an image renderer used for drawing into a UIImage
  */
-public struct ImageRenderer: Renderer {
+public final class ImageRenderer: Renderer {
     
     /// The associated context type
     public typealias Context = ImageRendererContext
@@ -113,9 +120,11 @@ public struct ImageRenderer: Renderer {
      */
     public init(size: CGSize, format: ImageRendererFormat? = nil) {
         guard size != .zero else { fatalError("size cannot be zero") }
+        
         let bounds = CGRect(origin: .zero, size: size)
         let opaque = format?.opaque ?? false
         let scale = format?.scale ?? screenScale()
+        
         self.format = ImageRendererFormat(bounds: bounds, opaque: opaque, scale: scale, flipped: format?.isFlipped ?? false)
     }
 
@@ -165,7 +174,7 @@ public struct ImageRenderer: Renderer {
             let bitmap = NSImage(size: format.bounds.size)
             bitmap.lockFocusFlipped(format.isFlipped)
             let cgContext = CGContext.current!
-            let context = Context(format: self.format, cgContext: cgContext)
+            let context = Context(format: format, cgContext: cgContext)
             drawingActions(context)
             completionActions?(context)
             bitmap.unlockFocus()
@@ -180,7 +189,7 @@ public struct ImageRenderer: Renderer {
                 cgContext.concatenate(transform)
             }
             
-            let context = Context(format: self.format, cgContext: cgContext)
+            let context = Context(format: format, cgContext: cgContext)
             drawingActions(context)
             completionActions?(context)
             UIGraphicsEndImageContext()

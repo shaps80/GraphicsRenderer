@@ -11,14 +11,15 @@
  
  - missingContext:     The context could not be found or created
  */
-public enum RendererContextError: Error {
+public enum RendererError: Error {
     case missingContext
+    case invalidURL
 }
 
 /**
  *  Defines a renderer format
  */
-public protocol RendererFormat {
+public protocol RendererFormat: class {
     
     /**
      Returns a default instance, configured for the current device
@@ -50,7 +51,7 @@ public protocol RendererDrawable {
 /**
  *  Represents a renderer context, which provides additional drawing methods as well as access to the underlying CGContext
  */
-public protocol RendererContext: RendererDrawable {
+public protocol RendererContext: class, RendererDrawable {
     associatedtype Format: RendererFormat
     var format: Format { get }
 }
@@ -70,7 +71,7 @@ extension UIGraphicsImageRendererContext: RendererDrawable { }
 /**
  *  Represents a renderer
  */
-public protocol Renderer {
+public protocol Renderer: class {
     
     /// The associated context type this renderer will use
     associatedtype Context: RendererContext

@@ -8,18 +8,18 @@
 
 extension RendererDrawable {
     
-    /// <#Description#>
+    /// Fills the specified rect
     ///
-    /// - Parameter rect: <#rect description#>
+    /// - Parameter rect: The rect to fill
     public func fill(_ rect: CGRect) {
         fill(rect, blendMode: .normal)
     }
     
-    /// <#Description#>
+    /// Fills the specified rect with the given blend mode
     ///
     /// - Parameters:
-    ///   - rect: <#rect description#>
-    ///   - blendMode: <#blendMode description#>
+    ///   - rect: The rect to fill
+    ///   - blendMode: The blend mode to apply to this fill
     public func fill(_ rect: CGRect, blendMode: CGBlendMode) {
         cgContext.saveGState()
         cgContext.setBlendMode(blendMode)
@@ -27,18 +27,18 @@ extension RendererDrawable {
         cgContext.restoreGState()
     }
     
-    /// <#Description#>
+    /// Strokes the specified rect
     ///
-    /// - Parameter rect: <#rect description#>
+    /// - Parameter rect: The rect to stroke
     public func stroke(_ rect: CGRect) {
         stroke(rect, blendMode: .normal)
     }
     
-    /// <#Description#>
+    /// Strokes the specified rect with the given blend mode
     ///
     /// - Parameters:
-    ///   - rect: <#rect description#>
-    ///   - blendMode: <#blendMode description#>
+    ///   - rect: The rect to stroke
+    ///   - blendMode: The blend more to apply to this stroke
     public func stroke(_ rect: CGRect, blendMode: CGBlendMode) {
         cgContext.saveGState()
         cgContext.setBlendMode(blendMode)
@@ -46,9 +46,9 @@ extension RendererDrawable {
         cgContext.restoreGState()
     }
     
-    /// <#Description#>
+    /// Clips the context to the specified rect
     ///
-    /// - Parameter rect: <#rect description#>
+    /// - Parameter rect: The rect to clip to
     public func clip(to rect: CGRect) {
         cgContext.saveGState()
         cgContext.clip(to: rect)
