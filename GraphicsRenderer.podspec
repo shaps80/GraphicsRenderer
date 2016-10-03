@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
     s.name             = "GraphicsRenderer"
     s.version          = "1.0.0"
-    s.summary          = "UIGraphicsRenderer -- CrossPlatform, Swift 3, Image, PDF and View Drawing"
+    s.summary          = "A UIGraphicsRenderer port -- CrossPlatform, Swift 3, Image & PDF"
     s.homepage         = "https://github.com/shaps80/GraphicsRenderer"
     s.license          = 'MIT'
     s.author           = { "Shaps" => "shapsuk@me.com" }
