@@ -37,11 +37,9 @@ GraphicsRenderer is also protocol based, which makes it more Swifty and allows f
 
 ## InkKit
 
-Coming Soon!
+I have another library called <a href="http://github.com/shaps80/InkKit">InkKit</a> which now uses this library for its inner workings. For a LOT more drawing and layout convenience's -- checkout that library too.~~
 
-~~I have another library called InkKit which now uses this library for its inner workings. For a LOT more drawing and layout convenience's -- checkout that library too.~~
-
-~~Note: If you include InkKit in your project, you don't need to include this project too.~~
+Note: If you include InkKit in your project, you don't need to include this project too.
 
 ## Example
 
