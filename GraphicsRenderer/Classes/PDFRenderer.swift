@@ -43,6 +43,11 @@ public final class PDFRendererFormat: RendererFormat {
         self.isFlipped = flipped
     }
     
+    /// Creates a new format with the specified document info and whether or not the context should be flipped
+    ///
+    /// - Parameters:
+    ///   - documentInfo: The associated PSD document info
+    ///   - flipped: If true, the context drawing will be flipped
     public init(documentInfo: [String: Any], flipped: Bool) {
         self.bounds = .zero
         self.documentInfo = documentInfo
@@ -51,23 +56,44 @@ public final class PDFRendererFormat: RendererFormat {
     
 }
 
+
+/// Represents a PDF renderer context
 public final class PDFRendererContext: RendererContext {
     
+    /// The underlying CGContext
     public let cgContext: CGContext
+    
+    /// The format for this context
     public let format: PDFRendererFormat
+    
+    /// The PDF context bounds
     public let pdfContextBounds: CGRect
+    
+    // Internal variable for auto-closing pages
     private var hasOpenPage: Bool = false
     
+    /// Creates a new context. If an existing page is open, this will also close it for you.
+    ///
+    /// - Parameters:
+    ///   - format: The format for this context
+    ///   - cgContext: The underlying CGContext to associate with this context
+    ///   - bounds: The bounds to use for this context
     internal init(format: PDFRendererFormat, cgContext: CGContext, bounds: CGRect) {
         self.format = format
         self.cgContext = cgContext
         self.pdfContextBounds = bounds
     }
     
+    /// Creates a new PDF page. The bounds will be the same as specified by the document
     public func beginPage() {
         beginPage(withBounds: format.bounds, pageInfo: [:])
     }
     
+    /// Creates a new PDF page. If an existing page is open, this will also close it for you.
+    ///
+    /// - Parameters:
+    ///   - bounds: The bounds to use for this page
+    ///   - pageInfo: The pageInfo associated to be associated with this page
     public func beginPage(withBounds bounds: CGRect, pageInfo: [String : Any]) {
         var info = pageInfo
         info[kCGPDFContextMediaBox as String] = bounds
@@ -84,27 +110,44 @@ public final class PDFRendererContext: RendererContext {
         }
     }
     
+    /// Set the URL associated with `rect' to `url' in the PDF context `context'.
+    ///
+    /// - Parameters:
+    ///   - url: The url to link to
+    ///   - rect: The rect representing the link
     public func setURL(_ url: URL, for rect: CGRect) {
         guard let url = url as? CFURL else { fatalError("url couldn't be converted to CFURL") }
         cgContext.setURL(url, for: rect)
     }
     
+    /// Create a PDF destination named `name' at `point' in the current page of the PDF context `context'.
+    ///
+    /// - Parameters:
+    ///   - name: A destination name
+    ///   - point: A location in the current page
     public func addDestination(withName name: String, at point: CGPoint) {
         guard let name = name as? CFString else { fatalError("name couldn't be converted to CFString") }
         cgContext.addDestination(name, at: point)
     }
     
+    /// Specify a destination named `name' to jump to when clicking in `rect' of the current page of the PDF context `context'.
+    ///
+    /// - Parameters:
+    ///   - name: A destination name
+    ///   - rect: A rect in the current page
     public func setDestinationWithName(_ name: String, for rect: CGRect) {
         guard let name = name as? CFString else { fatalError("name couldn't be converted to CFString") }
         cgContext.setDestination(name, for: rect)
     }
     
+    // If a page is currently opened, this will close it. Otherwise it does nothing
     fileprivate func endPageIfOpen() {
         guard hasOpenPage else { return }
         cgContext.endPDFPage()
     }
 }
 
+/// Represents a PDF renderer
 public final class PDFRenderer: Renderer {
     
     /// The associated context type
@@ -113,6 +156,11 @@ public final class PDFRenderer: Renderer {
     /// Returns the format for this renderer
     public let format: PDFRendererFormat
     
+    /// Creates a new PDF renderer with the specified bounds
+    ///
+    /// - Parameters:
+    ///   - bounds: The bounds of the PDF
+    ///   - format: The format to use for this PDF
     public init(bounds: CGRect, format: PDFRendererFormat? = nil) {
         guard bounds.size != .zero else { fatalError("size cannot be zero") }
         
@@ -120,6 +168,12 @@ public final class PDFRenderer: Renderer {
         self.format = PDFRendererFormat(bounds: bounds, documentInfo: info, flipped: format?.isFlipped ?? true)
     }
     
+    /// Draws the PDF and writes is to the specified URL
+    ///
+    /// - Parameters:
+    ///   - url: The url to write tp
+    ///   - actions: The drawing actions to perform
+    /// - Throws: May throw
     public func writePDF(to url: URL, withActions actions: (PDFRendererContext) -> Void) throws {
         var rect = format.bounds
         let consumer = CGDataConsumer(url: url as CFURL)!
@@ -127,6 +181,10 @@ public final class PDFRenderer: Renderer {
         try? runDrawingActions(forContext: context, drawingActions: actions, completionActions: nil)
     }
     
+    /// Draws the PDF and returns the associated Data representation
+    ///
+    /// - Parameter actions: The drawing actions to perform
+    /// - Returns: The PDF data
     public func pdfData(actions: (PDFRendererContext) -> Void) -> Data {
         var rect = format.bounds
         let data = NSMutableData()
