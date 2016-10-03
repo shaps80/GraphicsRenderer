@@ -17,7 +17,7 @@ public struct ImageRendererFormat: RendererFormat {
      - returns: A new format
      */
     public static func `default`() -> ImageRendererFormat {
-        return ImageRendererFormat(bounds: .zero)
+        return ImageRendererFormat(flipped: false)
     }
     
     /// Returns the bounds for this format
@@ -29,6 +29,9 @@ public struct ImageRendererFormat: RendererFormat {
     /// Get/set the scale of the resulting image
     public var scale: CGFloat
     
+    /// Get/set whether or not the context should be flipped while drawing
+    public var isFlipped: Bool
+    
     /**
      Creates a new format with the specified bounds
      
@@ -38,10 +41,11 @@ public struct ImageRendererFormat: RendererFormat {
      
      - returns: A new format
      */
-    init(bounds: CGRect, opaque: Bool = false, scale: CGFloat = screenScale()) {
+    public init(bounds: CGRect = .zero, opaque: Bool = false, scale: CGFloat = screenScale(), flipped: Bool) {
         self.bounds = bounds
         self.opaque = opaque
         self.scale = scale
+        self.isFlipped = flipped
     }
 }
 
@@ -59,19 +63,12 @@ public struct ImageRendererContext: RendererContext {
     /// Returns a UIImage representing the current state of the renderer's CGContext
     public var currentImage: Image {
         #if os(OSX)
-            let image = drawingImage
-            image?.lockFocus()
-            let rep = NSBitmapImageRep(focusedViewRect: CGRect(origin: .zero, size: image?.size ?? .zero))!
-            image?.unlockFocus()
-            return NSImage(cgImage: rep.cgImage!, size: image?.size ?? .zero)
+            let cgImage = CGContext.current!.makeImage()!
+            return NSImage(cgImage: cgImage, size: format.bounds.size)
         #else
             return UIGraphicsGetImageFromCurrentImageContext()!
         #endif
     }
-    
-    #if os(OSX)
-    private var drawingImage: Image?
-    #endif
     
     /**
      Creates a new renderer context
@@ -85,6 +82,7 @@ public struct ImageRendererContext: RendererContext {
         self.format = format
         self.cgContext = cgContext
     }
+    
 }
 
 /**
@@ -110,7 +108,13 @@ public struct ImageRenderer: Renderer {
      - returns: A new image renderer
      */
     public init(size: CGSize, format: ImageRendererFormat? = nil) {
-        self.format = format ?? ImageRendererFormat(bounds: CGRect(origin: .zero, size: size))
+        var flipped = false
+        
+        #if os(OSX)
+            flipped = true
+        #endif
+        
+        self.format = format ?? ImageRendererFormat(bounds: CGRect(origin: .zero, size: size), flipped: flipped)
     }
     
     /**
@@ -166,19 +170,19 @@ public struct ImageRenderer: Renderer {
     
     private func runDrawingActions(_ drawingActions: (Context) -> Void, completionActions: ((Context) -> Void)? = nil) throws {
         #if os(OSX)
-            let image = NSImage(size: format.bounds.size)
-            image.lockFocus()
+            let bitmap = NSImage(size: format.bounds.size)
+            bitmap.lockFocusFlipped(format.isFlipped)
             let cgContext = CGContext.current!
             let context = Context(format: self.format, cgContext: cgContext)
             drawingActions(context)
             completionActions?(context)
-            image.unlockFocus()
+            bitmap.unlockFocus()
         #endif
         
         #if os(iOS)
             UIGraphicsBeginImageContextWithOptions(format.bounds.size, format.opaque, format.scale)
             let cgContext = CGContext.current!
-            let context = Context(format: self.format, cgContext: cgContext)
+            let context = Context(format: self.format, cgContext: cgContext, drawableImage: nil)
             drawingActions(context)
             completionActions?(context)
             UIGraphicsEndImageContext()

@@ -10,11 +10,13 @@ import Cocoa
 import GraphicsRenderer
 
 class ViewController: NSViewController {
+    
+    @IBOutlet weak var imageView: NSImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let imag = ImageRenderer(size: CGSize(width: 100, height: 100)).image { context in
+        let image = ImageRenderer(size: CGSize(width: 100, height: 100)).image { context in
             let rect = context.format.bounds
             
             NSColor.white.setFill()
@@ -24,19 +26,15 @@ class ViewController: NSViewController {
             let frame = CGRect(x: 10, y: 10, width: 40, height: 40)
             context.stroke(frame)
             
-            var image = context.currentImage
+            var url = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+            url = url?.appendingPathComponent("image.png")
+            try? context.currentImage.pngRepresentation()!.write(to: url!)
             
             NSColor.red.setStroke()
             context.stroke(rect.insetBy(dx: 5, dy: 5))
-            
-            image = context.currentImage
-            print(image)
         }
-
-        print(imag)
-//        var url = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
-//        url = url?.appendingPathComponent("image.png")
-//        try? data.write(to: url!)
+        
+        imageView.image = image
     }
 
 }
