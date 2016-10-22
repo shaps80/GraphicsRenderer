@@ -17,7 +17,7 @@ UIGraphicsImageRendererFormat > ImageRendererFormat
 UIGraphicsPDFRendererFormat > PDFRendererFormat
 
 UIGraphicsRendererContext > RendererContext
-UIGraphicsImageRendererContext > PDFRendererContext
+UIGraphicsImageRendererContext > ImageRendererContext
 UIGraphicsPDFRendererContext > PDFRendererContext
 ```
 
