@@ -110,6 +110,12 @@ public final class ImageRendererContext: RendererContext {
     
 }
 
+extension ImageRenderer {
+    public convenience init(bounds: CGRect) {
+        self.init(size: bounds.size, format: nil)
+    }
+}
+
 /**
  *  Represents an image renderer used for drawing into a UIImage
  */

@@ -95,6 +95,8 @@ public protocol Renderer: class {
     
     /// Returns true if this renderer may be used to generate CGImageRefs
     var allowsImageOutput: Bool { get }
+    
+    init(bounds: CGRect)
 }
 
 extension Renderer {

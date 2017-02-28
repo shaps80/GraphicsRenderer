@@ -161,6 +161,12 @@ public final class PDFRendererContext: RendererContext {
     }
 }
 
+extension PDFRenderer {
+    public convenience init(bounds: CGRect) {
+        self.init(bounds: bounds, format: nil)
+    }
+}
+
 /// Represents a PDF renderer
 public final class PDFRenderer: Renderer {
     
