@@ -20,6 +20,8 @@
   THE SOFTWARE.
  */
 
+import Foundation
+
 /**
  *  Represents an image renderer format
  */
