@@ -218,8 +218,8 @@ public final class PDFRenderer: Renderer {
         let context = PDFRendererContext(format: format, cgContext: cgContext, bounds: format.bounds)
         
         #if os(OSX)
-            let previousContext = NSGraphicsContext.current()
-            NSGraphicsContext.setCurrent(NSGraphicsContext(cgContext: context.cgContext, flipped: format.isFlipped))
+            let previousContext = NSGraphicsContext.current
+            NSGraphicsContext.current = NSGraphicsContext(cgContext: context.cgContext, flipped: format.isFlipped)
         #else
             UIGraphicsPushContext(context.cgContext)
         #endif
@@ -231,7 +231,7 @@ public final class PDFRenderer: Renderer {
         context.cgContext.closePDF()
         
         #if os(OSX)
-            NSGraphicsContext.setCurrent(previousContext)
+            NSGraphicsContext.current = previousContext
         #else
             UIGraphicsPopContext()
         #endif
