@@ -8,17 +8,26 @@
 
 ## Installation
 
-Swift 4
+### Swift 4
+
+**Cocoapods**
+
 ```ruby
 pod "GraphicsRenderer", "1.2.0"
 ```
 
-Swift 3
+**Carthage**
+
+```ruby
+github "shaps80/GraphicsRenderer" ~> 1.2.1
+```
+
+### Swift 3
 ```ruby
 pod "GraphicsRenderer", "1.1.0"
 ```
 
-Swift 2.3
+### Swift 2.3
 ```ruby
 pod "GraphicsRenderer", "1.0.0"
 ```
