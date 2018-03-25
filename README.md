@@ -1,5 +1,6 @@
 # GraphicsRenderer
 
+[![Carthage compatible](https://img.shields.io/badge/Carthage-✓-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Version](https://img.shields.io/cocoapods/v/GraphicsRenderer.svg?style=flat)](http://cocoapods.org/pods/GraphicsRenderer)
 [![License](https://img.shields.io/cocoapods/l/GraphicsRenderer.svg?style=flat)](http://cocoapods.org/pods/GraphicsRenderer)
 [![Language](https://img.shields.io/badge/language-swift_3.0-ff69b4.svg)](http://cocoadocs.org/docsets/GraphicsRenderer)
