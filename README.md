@@ -8,12 +8,10 @@
 
 ## Installation
 
-### Swift 4
-
 **Cocoapods**
 
 ```ruby
-pod "GraphicsRenderer", "1.2.0"
+pod "GraphicsRenderer", "1.3.0"
 ```
 
 **Carthage**
