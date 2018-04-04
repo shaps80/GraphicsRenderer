@@ -7,360 +7,376 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		15BAB3AEAD8A096FE9A632C47D158E00 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC9B8E4D3C2AD91A4344A46E454B8B1 /* Renderer.swift */; };
-		16DD13C80EC5BBB5FBA27E0644292B35 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC9B8E4D3C2AD91A4344A46E454B8B1 /* Renderer.swift */; };
-		52BA0332274A8F2FFB4D401693D81296 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE25DD04263CA735DBC0065D686C708D /* Cocoa.framework */; };
-		6214B221D002D6537431BEB582A616FC /* RendererDrawable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663E6FC9A38C66BBAEF4A809A6896618 /* RendererDrawable.swift */; };
-		6A78FCBE9BB2821F9D8B9CF881E0FD31 /* Platforms.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7F7D32AF948A50FC7470108363C9ED /* Platforms.swift */; };
-		6E82B7CCA8C07415EA1389ABC0B443C5 /* GraphicsRenderer-OSX-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A798D045B021BBF0689BA133E30534FF /* GraphicsRenderer-OSX-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		79F0DE62462BF1839DFCD489EC072D4D /* Pods-iOSRenderer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 414733ACFE3853BA34CDC78A5457D95B /* Pods-iOSRenderer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7F10DF831666E3CCB130164FAF40E71E /* GraphicsRenderer-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B4FB356A2FF6D96A9992BCCC945435 /* GraphicsRenderer-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		823F2B5FE576F2D266414B87FF46026D /* Platforms.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7F7D32AF948A50FC7470108363C9ED /* Platforms.swift */; };
-		83A85208969B9172FE00CC56B8D1EDC7 /* PDFRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC51DA4DBAB2208B9B053002CBD81C4 /* PDFRenderer.swift */; };
-		8696A57C3001A2E99BD59A053C3F5928 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0C89EDC2EC27D60F4934F3C043A7D91 /* Foundation.framework */; };
-		962A1B7689040E373FCD03FBABDB16BA /* Pods-iOSRenderer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BDE9A73AE498CA82742373023FE18E32 /* Pods-iOSRenderer-dummy.m */; };
-		9D960955D7820767DBCA48A8F0DD7467 /* Pods-MacOSRenderer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AB959D9E4213B4C8A2F96E4E7F36596A /* Pods-MacOSRenderer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AEDE34B1FEDC7F6CF3A525F93E0C08F1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE25DD04263CA735DBC0065D686C708D /* Cocoa.framework */; };
-		BB22ABD01FB64F13BDB29140AF16186B /* PDFRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC51DA4DBAB2208B9B053002CBD81C4 /* PDFRenderer.swift */; };
-		C008BE18F0F349984FDC3D62D3478FBF /* ImageRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98FDCEB6015E2C47B4D8A3F72884298 /* ImageRenderer.swift */; };
-		C08D234562409373D15BC1DB454D3067 /* RendererDrawable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663E6FC9A38C66BBAEF4A809A6896618 /* RendererDrawable.swift */; };
-		CCAC4E9EED5B0851AAAEE492A5B5D62C /* GraphicsRenderer-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3F76528E0163ADEA9AD60030A9B623 /* GraphicsRenderer-iOS-dummy.m */; };
-		D2A8A27E86EAECB623F12CE04E4CBB81 /* GraphicsRenderer-OSX-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C6057E3B798D91CE72E07733F9088E /* GraphicsRenderer-OSX-dummy.m */; };
-		D48622F2613BA276F40AEAFE230216B9 /* Pods-MacOSRenderer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E86A74AE0561389B781EADC714AD635C /* Pods-MacOSRenderer-dummy.m */; };
-		DF1CDB3CE7A0FECD016AC94601CF7207 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0C89EDC2EC27D60F4934F3C043A7D91 /* Foundation.framework */; };
-		EBC99E051773EF4379E06A5D7FF9EF19 /* ImageRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98FDCEB6015E2C47B4D8A3F72884298 /* ImageRenderer.swift */; };
+		044BA92F4E7A8C165F88D52EBB61F03D /* PDFRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A892E6B0B9CBF758FD580C6CC8CEAE7 /* PDFRenderer.swift */; };
+		19BDBC41ED482B458F95CAFFCDE117E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8E2D632CADFEBE217900FD1D4F3ABF /* Foundation.framework */; };
+		26782C7F73BE89B84D587BD2D1346B2D /* GraphicsRenderer-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 13717B9F7F216A4F8092ACF9144FD7CA /* GraphicsRenderer-iOS-dummy.m */; };
+		2A409551964625E589FFDE29FD78A7C4 /* GraphicsRenderer-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C22CF024881A9699D2AAD482B1C7B6B /* GraphicsRenderer-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D6A6B70C199D2027FD781804AEC8E6C /* ImageRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63307B93A352C7381A597B1F2F31243B /* ImageRenderer.swift */; };
+		3B1646B5BC38D27EC0F1D91B0411DBA9 /* Platforms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB95B9EFBE9E02625E4574AB393CD8C /* Platforms.swift */; };
+		446F960EB57E090A624BBFC8C69290FB /* Pods-iOSRenderer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BCAADF58645F355183DF97C189650E /* Pods-iOSRenderer-dummy.m */; };
+		5E09CE6C68AE73CE6E43907CB20DB84D /* RendererDrawable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DFF8A39A036A8B136F33D30A866083 /* RendererDrawable.swift */; };
+		69628C840C16D7E5F93F55CBBE9E65D8 /* Platforms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB95B9EFBE9E02625E4574AB393CD8C /* Platforms.swift */; };
+		6A64BD0616DE62112FD2F6238B32C057 /* GraphicsRenderer-macOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5DB9F0D928EC04CF258B238DEFF82B /* GraphicsRenderer-macOS-dummy.m */; };
+		6ED694B3BA1A727945CFDEB10BE0B0C4 /* GraphicsRenderer-macOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 68F66F9A2C0A0029ADE6200CE6D3EBF5 /* GraphicsRenderer-macOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		718AE8B0E2E1A207DBB6B42AEBDAED38 /* RendererDrawable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DFF8A39A036A8B136F33D30A866083 /* RendererDrawable.swift */; };
+		7E2FBD27729A07EAD716A766E9BCF53A /* Pods-MacOSRenderer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B16EED88717A5EB1DCE7CCCD055E95 /* Pods-MacOSRenderer-dummy.m */; };
+		8EC78AA61C4E0BDD725ED523B8D0A2D1 /* PDFRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A892E6B0B9CBF758FD580C6CC8CEAE7 /* PDFRenderer.swift */; };
+		BD2732B8B91B50A6985B52AA3E81C1ED /* ImageRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63307B93A352C7381A597B1F2F31243B /* ImageRenderer.swift */; };
+		C995343260A2E043F0A22D5AE42200B2 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F80D271F1E82EF4A09AA8FCB72DB2B /* Renderer.swift */; };
+		D62A2A9FA764BE228003A42CA8BBB28D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51FC1E5D1F5671E0532D52CB477AC228 /* Cocoa.framework */; };
+		DC363F206D01879D6395EC4FEBD76421 /* Pods-MacOSRenderer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E8BF40628842DEB508B52A2625A7A740 /* Pods-MacOSRenderer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F20C19F8C7E05559955E109182C6F2DE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51FC1E5D1F5671E0532D52CB477AC228 /* Cocoa.framework */; };
+		F35440021C359DEF706BC3FD534F08BA /* Pods-iOSRenderer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A98434DBAD61C5F8E313E5D43A23D53 /* Pods-iOSRenderer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBBD198B682AF1DE56CA88C5EFC85789 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F80D271F1E82EF4A09AA8FCB72DB2B /* Renderer.swift */; };
+		FFFE7831802C7225D3E7E831D2ABD372 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8E2D632CADFEBE217900FD1D4F3ABF /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3FD5A5E3E10D15881224C81C4D940245 /* PBXContainerItemProxy */ = {
+		3A7CFB658F5265868233FA543ABBFE31 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C498E7DC6C8918C4B9415A1933BA0EBA;
+			remoteGlobalIDString = 659E36FE0A502BBDC16F4D6BC54A2D68;
 			remoteInfo = "GraphicsRenderer-iOS";
 		};
-		D8458D01487A1313C0225934D1C92BF8 /* PBXContainerItemProxy */ = {
+		C3EF70D9DB48245A42B4102D7CD6A075 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3C6F39CEB31D8CA002115B23D892B372;
-			remoteInfo = "GraphicsRenderer-OSX";
+			remoteGlobalIDString = 3FC4E14C1556E2EB30BFB8E2C3C1D4A3;
+			remoteInfo = "GraphicsRenderer-macOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03BAEE2F9BBA92032E7BF53F405BBCA9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		253604917943CA4224BB5055458AE775 /* GraphicsRenderer-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GraphicsRenderer-iOS-prefix.pch"; path = "../GraphicsRenderer-iOS/GraphicsRenderer-iOS-prefix.pch"; sourceTree = "<group>"; };
-		3AC9B8E4D3C2AD91A4344A46E454B8B1 /* Renderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
-		3E3F76528E0163ADEA9AD60030A9B623 /* GraphicsRenderer-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GraphicsRenderer-iOS-dummy.m"; path = "../GraphicsRenderer-iOS/GraphicsRenderer-iOS-dummy.m"; sourceTree = "<group>"; };
-		3EEBDC2745CEC92A14E7223CCAA85760 /* Pods-MacOSRenderer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MacOSRenderer-acknowledgements.markdown"; sourceTree = "<group>"; };
-		414733ACFE3853BA34CDC78A5457D95B /* Pods-iOSRenderer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iOSRenderer-umbrella.h"; sourceTree = "<group>"; };
-		49C08FA63BB9DFE86E0E1678B4C359D9 /* GraphicsRenderer-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "GraphicsRenderer-iOS.xcconfig"; path = "../GraphicsRenderer-iOS/GraphicsRenderer-iOS.xcconfig"; sourceTree = "<group>"; };
-		4ECD529A93BDB8C66C38DB084D8A678F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5C2D09CFA0421C8B44BD0BF030762239 /* Pods-iOSRenderer-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iOSRenderer-frameworks.sh"; sourceTree = "<group>"; };
-		5C81F5002748E0E352B1645CEE872BC4 /* Pods-iOSRenderer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iOSRenderer-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5D6CFE315A1E57C85F0792A14024DA44 /* Pods-iOSRenderer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iOSRenderer-acknowledgements.plist"; sourceTree = "<group>"; };
-		663E6FC9A38C66BBAEF4A809A6896618 /* RendererDrawable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RendererDrawable.swift; sourceTree = "<group>"; };
-		6E3252247E3FA39E10E75074B333E0E7 /* Pods-iOSRenderer-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iOSRenderer-resources.sh"; sourceTree = "<group>"; };
-		7727ACED15724FB76CCE0C3F2594AE0E /* GraphicsRenderer-OSX.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "GraphicsRenderer-OSX.modulemap"; sourceTree = "<group>"; };
-		8D4A325EBA3EE14694BF7F2D44BF8B18 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../GraphicsRenderer-iOS/Info.plist"; sourceTree = "<group>"; };
-		92F496BED77602DECE61AE94C4280870 /* Pods-iOSRenderer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOSRenderer.debug.xcconfig"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		992131951B88B90599593E585779CDB5 /* Pods-MacOSRenderer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MacOSRenderer.modulemap"; sourceTree = "<group>"; };
-		99A6083E60EDDD36E47E4D908EEE6748 /* GraphicsRenderer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GraphicsRenderer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A23C6D9F3ABAFF0F8759CFF9430653C9 /* Pods-MacOSRenderer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MacOSRenderer-acknowledgements.plist"; sourceTree = "<group>"; };
-		A2D0831B3644D82F476212106902E933 /* Pods_iOSRenderer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSRenderer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A798D045B021BBF0689BA133E30534FF /* GraphicsRenderer-OSX-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GraphicsRenderer-OSX-umbrella.h"; sourceTree = "<group>"; };
-		A86A9A87A30C834BC62C4775F6CB06FB /* Pods-iOSRenderer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOSRenderer.release.xcconfig"; sourceTree = "<group>"; };
-		A8CC33AA4D0CBC43459D4784B1CE6C5B /* Pods-MacOSRenderer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MacOSRenderer.debug.xcconfig"; sourceTree = "<group>"; };
-		AB959D9E4213B4C8A2F96E4E7F36596A /* Pods-MacOSRenderer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MacOSRenderer-umbrella.h"; sourceTree = "<group>"; };
-		AF76544E4B1AB56C873ED2F1DF999076 /* Pods-iOSRenderer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-iOSRenderer.modulemap"; sourceTree = "<group>"; };
-		B0C89EDC2EC27D60F4934F3C043A7D91 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		BD293BB3DBC2BC96341DCDFF721ABED6 /* GraphicsRenderer-OSX.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "GraphicsRenderer-OSX.xcconfig"; sourceTree = "<group>"; };
-		BDE9A73AE498CA82742373023FE18E32 /* Pods-iOSRenderer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iOSRenderer-dummy.m"; sourceTree = "<group>"; };
-		BF93B46DF0BD1614E0E6FC63B40DB928 /* GraphicsRenderer-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "GraphicsRenderer-iOS.modulemap"; path = "../GraphicsRenderer-iOS/GraphicsRenderer-iOS.modulemap"; sourceTree = "<group>"; };
-		C018F00E1A252141B527AB6CFFFEB572 /* Pods-MacOSRenderer-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MacOSRenderer-frameworks.sh"; sourceTree = "<group>"; };
-		C1057EA17010EBAF845CAC344BFE4E97 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C2129497CCCCE7FB6A6BF25BDCFFDAE4 /* GraphicsRenderer-OSX-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GraphicsRenderer-OSX-prefix.pch"; sourceTree = "<group>"; };
-		D1591CD6F461D9ED43D9E4D3BF484FB5 /* Pods-MacOSRenderer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MacOSRenderer.release.xcconfig"; sourceTree = "<group>"; };
-		D5B4F904070D97D6F409E6AB8B677D62 /* Pods_MacOSRenderer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MacOSRenderer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5C6057E3B798D91CE72E07733F9088E /* GraphicsRenderer-OSX-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GraphicsRenderer-OSX-dummy.m"; sourceTree = "<group>"; };
-		DBC51DA4DBAB2208B9B053002CBD81C4 /* PDFRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PDFRenderer.swift; sourceTree = "<group>"; };
-		DE25DD04263CA735DBC0065D686C708D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
-		DEDD9297A124825CFF2BEBA45E72678F /* GraphicsRenderer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GraphicsRenderer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF3BE5A8852A8A23D177A34F990B6788 /* Pods-MacOSRenderer-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MacOSRenderer-resources.sh"; sourceTree = "<group>"; };
-		E86A74AE0561389B781EADC714AD635C /* Pods-MacOSRenderer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MacOSRenderer-dummy.m"; sourceTree = "<group>"; };
-		ED7F7D32AF948A50FC7470108363C9ED /* Platforms.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Platforms.swift; sourceTree = "<group>"; };
-		F5B4FB356A2FF6D96A9992BCCC945435 /* GraphicsRenderer-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GraphicsRenderer-iOS-umbrella.h"; path = "../GraphicsRenderer-iOS/GraphicsRenderer-iOS-umbrella.h"; sourceTree = "<group>"; };
-		F98FDCEB6015E2C47B4D8A3F72884298 /* ImageRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ImageRenderer.swift; sourceTree = "<group>"; };
+		001D8E5AD2A9F2FDD2B8BEA9AF5B23E3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../GraphicsRenderer-macOS/Info.plist"; sourceTree = "<group>"; };
+		02BD2FB8B9CD5BDE250EE2BBE9D368E0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		04DFF8A39A036A8B136F33D30A866083 /* RendererDrawable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RendererDrawable.swift; path = GraphicsRenderer/Classes/RendererDrawable.swift; sourceTree = "<group>"; };
+		0BB7E82477D0C8761AC475D3C192585F /* Pods-MacOSRenderer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MacOSRenderer.debug.xcconfig"; sourceTree = "<group>"; };
+		0CB95B9EFBE9E02625E4574AB393CD8C /* Platforms.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Platforms.swift; path = GraphicsRenderer/Classes/Platforms.swift; sourceTree = "<group>"; };
+		13717B9F7F216A4F8092ACF9144FD7CA /* GraphicsRenderer-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GraphicsRenderer-iOS-dummy.m"; sourceTree = "<group>"; };
+		156D5FDCC0FDC67B65C3DD981DFAC15C /* Pods-iOSRenderer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOSRenderer.release.xcconfig"; sourceTree = "<group>"; };
+		1F195F19E187AE769E2DCD103129C6A9 /* Pods-MacOSRenderer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MacOSRenderer-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2C22CF024881A9699D2AAD482B1C7B6B /* GraphicsRenderer-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GraphicsRenderer-iOS-umbrella.h"; sourceTree = "<group>"; };
+		3CA4D19F4A634D126B30A98BDC5D6834 /* Pods_iOSRenderer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_iOSRenderer.framework; path = "Pods-iOSRenderer.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FF7C8B23E658573C3B17EF9A8C7D2CE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44018228E1E824D37B77D1B5312CEEEC /* Pods-iOSRenderer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iOSRenderer-acknowledgements.markdown"; sourceTree = "<group>"; };
+		495B9A82F597404293E06433EBF3F9C3 /* Pods-iOSRenderer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-iOSRenderer.modulemap"; sourceTree = "<group>"; };
+		51FC1E5D1F5671E0532D52CB477AC228 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		52A1D4C7412142B6D24418DF63004420 /* Pods-MacOSRenderer-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MacOSRenderer-resources.sh"; sourceTree = "<group>"; };
+		52A24C53C9A88C63671DF65C1E6BBEC3 /* Pods-MacOSRenderer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MacOSRenderer-acknowledgements.plist"; sourceTree = "<group>"; };
+		5EC7FF9A18CB7801D6357B8C68196C57 /* GraphicsRenderer-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "GraphicsRenderer-iOS.modulemap"; sourceTree = "<group>"; };
+		60DF9C1897CBEB10549CF6C6FA8AD4A2 /* Pods-iOSRenderer-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iOSRenderer-resources.sh"; sourceTree = "<group>"; };
+		63307B93A352C7381A597B1F2F31243B /* ImageRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageRenderer.swift; path = GraphicsRenderer/Classes/ImageRenderer.swift; sourceTree = "<group>"; };
+		6357149D0658D04C6D216FC7F2C8DB9B /* Pods-MacOSRenderer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MacOSRenderer.release.xcconfig"; sourceTree = "<group>"; };
+		6430092520A27427C2B6810793A268A9 /* Pods-MacOSRenderer-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MacOSRenderer-frameworks.sh"; sourceTree = "<group>"; };
+		68F66F9A2C0A0029ADE6200CE6D3EBF5 /* GraphicsRenderer-macOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GraphicsRenderer-macOS-umbrella.h"; path = "../GraphicsRenderer-macOS/GraphicsRenderer-macOS-umbrella.h"; sourceTree = "<group>"; };
+		6A892E6B0B9CBF758FD580C6CC8CEAE7 /* PDFRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PDFRenderer.swift; path = GraphicsRenderer/Classes/PDFRenderer.swift; sourceTree = "<group>"; };
+		73F80D271F1E82EF4A09AA8FCB72DB2B /* Renderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Renderer.swift; path = GraphicsRenderer/Classes/Renderer.swift; sourceTree = "<group>"; };
+		7B415812CC8105876323C67C490F7273 /* GraphicsRenderer-macOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "GraphicsRenderer-macOS.modulemap"; path = "../GraphicsRenderer-macOS/GraphicsRenderer-macOS.modulemap"; sourceTree = "<group>"; };
+		811EFFCA4AAC8C97114A5CC84C6AF03F /* Pods-MacOSRenderer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MacOSRenderer.modulemap"; sourceTree = "<group>"; };
+		84B16EED88717A5EB1DCE7CCCD055E95 /* Pods-MacOSRenderer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MacOSRenderer-dummy.m"; sourceTree = "<group>"; };
+		84DDE2602B538408654E3E90B77256A5 /* GraphicsRenderer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GraphicsRenderer.framework; path = "GraphicsRenderer-macOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C5DB9F0D928EC04CF258B238DEFF82B /* GraphicsRenderer-macOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GraphicsRenderer-macOS-dummy.m"; path = "../GraphicsRenderer-macOS/GraphicsRenderer-macOS-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93BCAADF58645F355183DF97C189650E /* Pods-iOSRenderer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iOSRenderer-dummy.m"; sourceTree = "<group>"; };
+		99AA6674A09C117FC3ECD272D7E8D923 /* GraphicsRenderer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GraphicsRenderer.framework; path = "GraphicsRenderer-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A98434DBAD61C5F8E313E5D43A23D53 /* Pods-iOSRenderer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iOSRenderer-umbrella.h"; sourceTree = "<group>"; };
+		9BE7AA767DCF75F3AE282CF4107FDD3F /* GraphicsRenderer-macOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "GraphicsRenderer-macOS.xcconfig"; path = "../GraphicsRenderer-macOS/GraphicsRenderer-macOS.xcconfig"; sourceTree = "<group>"; };
+		A617E24B9C663C0ACF8E4A3B97032969 /* Pods-iOSRenderer-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iOSRenderer-frameworks.sh"; sourceTree = "<group>"; };
+		ACED90E4C00477B5A80437134764C09C /* GraphicsRenderer-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "GraphicsRenderer-iOS.xcconfig"; sourceTree = "<group>"; };
+		B2BB146062AF11E354D822177C951B9E /* GraphicsRenderer.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = GraphicsRenderer.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BEFA65AEE5EDE9A330ED2FF11AA69B17 /* GraphicsRenderer-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GraphicsRenderer-iOS-prefix.pch"; sourceTree = "<group>"; };
+		CBB3E34B7BABA9685ADF4A068930F76D /* Pods_MacOSRenderer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MacOSRenderer.framework; path = "Pods-MacOSRenderer.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE3197EAB2648E73BD555BF0FEA418A4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5A6D204954E4FC4359EF8895851825B /* Pods-iOSRenderer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iOSRenderer-acknowledgements.plist"; sourceTree = "<group>"; };
+		D8DA49BA979B8C22DCF1035D327C17C3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		DB8E2D632CADFEBE217900FD1D4F3ABF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E8BF40628842DEB508B52A2625A7A740 /* Pods-MacOSRenderer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MacOSRenderer-umbrella.h"; sourceTree = "<group>"; };
+		E9D765F64409E42D224DF846DD414911 /* Pods-iOSRenderer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOSRenderer.debug.xcconfig"; sourceTree = "<group>"; };
+		F75ABC16D8FCAF4C6D35A655EE355A82 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD3FF216228778253B9468476FFA2E30 /* GraphicsRenderer-macOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GraphicsRenderer-macOS-prefix.pch"; path = "../GraphicsRenderer-macOS/GraphicsRenderer-macOS-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6F41B7F499970C358C88DCE5A0677F5B /* Frameworks */ = {
+		23AC407C8C897A5BBA0A2E19C25B0998 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8696A57C3001A2E99BD59A053C3F5928 /* Foundation.framework in Frameworks */,
+				D62A2A9FA764BE228003A42CA8BBB28D /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		941F16CB50668D5083290CDF81D54D70 /* Frameworks */ = {
+		6AA0D61CC6992DDE3F47A8BD021D02F3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEDE34B1FEDC7F6CF3A525F93E0C08F1 /* Cocoa.framework in Frameworks */,
+				F20C19F8C7E05559955E109182C6F2DE /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B1C61C7D67F97DD4B2BA83A76FBCB044 /* Frameworks */ = {
+		83BE30A7E5673CFB829AD28E04FC0F2E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF1CDB3CE7A0FECD016AC94601CF7207 /* Foundation.framework in Frameworks */,
+				FFFE7831802C7225D3E7E831D2ABD372 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B925FC649C8607BB0B1DDCA12BE40250 /* Frameworks */ = {
+		EA8284465409A5C1F8DE2ABB7E9C7D3F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52BA0332274A8F2FFB4D401693D81296 /* Cocoa.framework in Frameworks */,
+				19BDBC41ED482B458F95CAFFCDE117E5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0046F25BB727597461F24567865FE155 /* GraphicsRenderer */ = {
+		1D2C15F28C72025700B2DFC81BFD9BB3 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C1435E295E8546011D931DDA942C97CC /* GraphicsRenderer */,
-				9EFB0AEA9976FB42D1AF8790640EC0FB /* Support Files */,
+				5EC7FF9A18CB7801D6357B8C68196C57 /* GraphicsRenderer-iOS.modulemap */,
+				ACED90E4C00477B5A80437134764C09C /* GraphicsRenderer-iOS.xcconfig */,
+				13717B9F7F216A4F8092ACF9144FD7CA /* GraphicsRenderer-iOS-dummy.m */,
+				BEFA65AEE5EDE9A330ED2FF11AA69B17 /* GraphicsRenderer-iOS-prefix.pch */,
+				2C22CF024881A9699D2AAD482B1C7B6B /* GraphicsRenderer-iOS-umbrella.h */,
+				7B415812CC8105876323C67C490F7273 /* GraphicsRenderer-macOS.modulemap */,
+				9BE7AA767DCF75F3AE282CF4107FDD3F /* GraphicsRenderer-macOS.xcconfig */,
+				8C5DB9F0D928EC04CF258B238DEFF82B /* GraphicsRenderer-macOS-dummy.m */,
+				FD3FF216228778253B9468476FFA2E30 /* GraphicsRenderer-macOS-prefix.pch */,
+				68F66F9A2C0A0029ADE6200CE6D3EBF5 /* GraphicsRenderer-macOS-umbrella.h */,
+				001D8E5AD2A9F2FDD2B8BEA9AF5B23E3 /* Info.plist */,
+				3FF7C8B23E658573C3B17EF9A8C7D2CE /* Info.plist */,
 			);
-			name = GraphicsRenderer;
-			path = ../..;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/GraphicsRenderer-iOS";
 			sourceTree = "<group>";
 		};
-		0C2B7A57D4F18D8F303D89702F874F45 /* Pods-iOSRenderer */ = {
+		34BE8B02178A92BA2FB4B7888ECF14F5 /* OS X */ = {
 			isa = PBXGroup;
 			children = (
-				4ECD529A93BDB8C66C38DB084D8A678F /* Info.plist */,
-				AF76544E4B1AB56C873ED2F1DF999076 /* Pods-iOSRenderer.modulemap */,
-				5C81F5002748E0E352B1645CEE872BC4 /* Pods-iOSRenderer-acknowledgements.markdown */,
-				5D6CFE315A1E57C85F0792A14024DA44 /* Pods-iOSRenderer-acknowledgements.plist */,
-				BDE9A73AE498CA82742373023FE18E32 /* Pods-iOSRenderer-dummy.m */,
-				5C2D09CFA0421C8B44BD0BF030762239 /* Pods-iOSRenderer-frameworks.sh */,
-				6E3252247E3FA39E10E75074B333E0E7 /* Pods-iOSRenderer-resources.sh */,
-				414733ACFE3853BA34CDC78A5457D95B /* Pods-iOSRenderer-umbrella.h */,
-				92F496BED77602DECE61AE94C4280870 /* Pods-iOSRenderer.debug.xcconfig */,
-				A86A9A87A30C834BC62C4775F6CB06FB /* Pods-iOSRenderer.release.xcconfig */,
+				51FC1E5D1F5671E0532D52CB477AC228 /* Cocoa.framework */,
 			);
-			name = "Pods-iOSRenderer";
-			path = "Target Support Files/Pods-iOSRenderer";
-			sourceTree = "<group>";
-		};
-		179EA934B79B6099C300BDF2A11C13D4 /* Pods-MacOSRenderer */ = {
-			isa = PBXGroup;
-			children = (
-				C1057EA17010EBAF845CAC344BFE4E97 /* Info.plist */,
-				992131951B88B90599593E585779CDB5 /* Pods-MacOSRenderer.modulemap */,
-				3EEBDC2745CEC92A14E7223CCAA85760 /* Pods-MacOSRenderer-acknowledgements.markdown */,
-				A23C6D9F3ABAFF0F8759CFF9430653C9 /* Pods-MacOSRenderer-acknowledgements.plist */,
-				E86A74AE0561389B781EADC714AD635C /* Pods-MacOSRenderer-dummy.m */,
-				C018F00E1A252141B527AB6CFFFEB572 /* Pods-MacOSRenderer-frameworks.sh */,
-				DF3BE5A8852A8A23D177A34F990B6788 /* Pods-MacOSRenderer-resources.sh */,
-				AB959D9E4213B4C8A2F96E4E7F36596A /* Pods-MacOSRenderer-umbrella.h */,
-				A8CC33AA4D0CBC43459D4784B1CE6C5B /* Pods-MacOSRenderer.debug.xcconfig */,
-				D1591CD6F461D9ED43D9E4D3BF484FB5 /* Pods-MacOSRenderer.release.xcconfig */,
-			);
-			name = "Pods-MacOSRenderer";
-			path = "Target Support Files/Pods-MacOSRenderer";
-			sourceTree = "<group>";
-		};
-		20F0358DDA0BC445966C456856AD4768 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				99A6083E60EDDD36E47E4D908EEE6748 /* GraphicsRenderer.framework */,
-				DEDD9297A124825CFF2BEBA45E72678F /* GraphicsRenderer.framework */,
-				A2D0831B3644D82F476212106902E933 /* Pods_iOSRenderer.framework */,
-				D5B4F904070D97D6F409E6AB8B677D62 /* Pods_MacOSRenderer.framework */,
-			);
-			name = Products;
+			name = "OS X";
 			sourceTree = "<group>";
 		};
 		3AEF7D761E8EA8419BB4A7000AB770CB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DEA55AE7EB4A1B09C009B82BA492BD02 /* iOS */,
-				9304B30CB87FDB77B6CEE9FB6B800855 /* OS X */,
+				8C918DD0468B798DBE7EEDD4C9D4170B /* iOS */,
+				34BE8B02178A92BA2FB4B7888ECF14F5 /* OS X */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		525BA3D6E91DCAACD195C2C6DFC468D0 /* Classes */ = {
+		4F68BD0B440E602D9801D51D61D04816 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F98FDCEB6015E2C47B4D8A3F72884298 /* ImageRenderer.swift */,
-				DBC51DA4DBAB2208B9B053002CBD81C4 /* PDFRenderer.swift */,
-				ED7F7D32AF948A50FC7470108363C9ED /* Platforms.swift */,
-				3AC9B8E4D3C2AD91A4344A46E454B8B1 /* Renderer.swift */,
-				663E6FC9A38C66BBAEF4A809A6896618 /* RendererDrawable.swift */,
+				99AA6674A09C117FC3ECD272D7E8D923 /* GraphicsRenderer.framework */,
+				84DDE2602B538408654E3E90B77256A5 /* GraphicsRenderer.framework */,
+				3CA4D19F4A634D126B30A98BDC5D6834 /* Pods_iOSRenderer.framework */,
+				CBB3E34B7BABA9685ADF4A068930F76D /* Pods_MacOSRenderer.framework */,
 			);
-			path = Classes;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5987F6194324B2C2E40DED1D24711C1B /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE9615597734D7BFF87E66CB557A4C33 /* GraphicsRenderer */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7A5736A442CD21D45F2E89EC5622E3BE /* Pods-MacOSRenderer */ = {
+			isa = PBXGroup;
+			children = (
+				CE3197EAB2648E73BD555BF0FEA418A4 /* Info.plist */,
+				811EFFCA4AAC8C97114A5CC84C6AF03F /* Pods-MacOSRenderer.modulemap */,
+				1F195F19E187AE769E2DCD103129C6A9 /* Pods-MacOSRenderer-acknowledgements.markdown */,
+				52A24C53C9A88C63671DF65C1E6BBEC3 /* Pods-MacOSRenderer-acknowledgements.plist */,
+				84B16EED88717A5EB1DCE7CCCD055E95 /* Pods-MacOSRenderer-dummy.m */,
+				6430092520A27427C2B6810793A268A9 /* Pods-MacOSRenderer-frameworks.sh */,
+				52A1D4C7412142B6D24418DF63004420 /* Pods-MacOSRenderer-resources.sh */,
+				E8BF40628842DEB508B52A2625A7A740 /* Pods-MacOSRenderer-umbrella.h */,
+				0BB7E82477D0C8761AC475D3C192585F /* Pods-MacOSRenderer.debug.xcconfig */,
+				6357149D0658D04C6D216FC7F2C8DB9B /* Pods-MacOSRenderer.release.xcconfig */,
+			);
+			name = "Pods-MacOSRenderer";
+			path = "Target Support Files/Pods-MacOSRenderer";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				9A2256B1CF4A078D8D656FA8ECDF634B /* Development Pods */,
+				5987F6194324B2C2E40DED1D24711C1B /* Development Pods */,
 				3AEF7D761E8EA8419BB4A7000AB770CB /* Frameworks */,
-				20F0358DDA0BC445966C456856AD4768 /* Products */,
+				4F68BD0B440E602D9801D51D61D04816 /* Products */,
 				B63CBF56EF996989F83DF7A179B735FF /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		9304B30CB87FDB77B6CEE9FB6B800855 /* OS X */ = {
+		8C918DD0468B798DBE7EEDD4C9D4170B /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				DE25DD04263CA735DBC0065D686C708D /* Cocoa.framework */,
+				DB8E2D632CADFEBE217900FD1D4F3ABF /* Foundation.framework */,
 			);
-			name = "OS X";
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		9A2256B1CF4A078D8D656FA8ECDF634B /* Development Pods */ = {
+		8FF284210A171C5FF8F81DFB051F14AF /* Pods-iOSRenderer */ = {
 			isa = PBXGroup;
 			children = (
-				0046F25BB727597461F24567865FE155 /* GraphicsRenderer */,
+				F75ABC16D8FCAF4C6D35A655EE355A82 /* Info.plist */,
+				495B9A82F597404293E06433EBF3F9C3 /* Pods-iOSRenderer.modulemap */,
+				44018228E1E824D37B77D1B5312CEEEC /* Pods-iOSRenderer-acknowledgements.markdown */,
+				D5A6D204954E4FC4359EF8895851825B /* Pods-iOSRenderer-acknowledgements.plist */,
+				93BCAADF58645F355183DF97C189650E /* Pods-iOSRenderer-dummy.m */,
+				A617E24B9C663C0ACF8E4A3B97032969 /* Pods-iOSRenderer-frameworks.sh */,
+				60DF9C1897CBEB10549CF6C6FA8AD4A2 /* Pods-iOSRenderer-resources.sh */,
+				9A98434DBAD61C5F8E313E5D43A23D53 /* Pods-iOSRenderer-umbrella.h */,
+				E9D765F64409E42D224DF846DD414911 /* Pods-iOSRenderer.debug.xcconfig */,
+				156D5FDCC0FDC67B65C3DD981DFAC15C /* Pods-iOSRenderer.release.xcconfig */,
 			);
-			name = "Development Pods";
+			name = "Pods-iOSRenderer";
+			path = "Target Support Files/Pods-iOSRenderer";
 			sourceTree = "<group>";
 		};
-		9EFB0AEA9976FB42D1AF8790640EC0FB /* Support Files */ = {
+		9B5DE19C481F29A2309DC594CA2E61E7 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				BF93B46DF0BD1614E0E6FC63B40DB928 /* GraphicsRenderer-iOS.modulemap */,
-				49C08FA63BB9DFE86E0E1678B4C359D9 /* GraphicsRenderer-iOS.xcconfig */,
-				3E3F76528E0163ADEA9AD60030A9B623 /* GraphicsRenderer-iOS-dummy.m */,
-				253604917943CA4224BB5055458AE775 /* GraphicsRenderer-iOS-prefix.pch */,
-				F5B4FB356A2FF6D96A9992BCCC945435 /* GraphicsRenderer-iOS-umbrella.h */,
-				7727ACED15724FB76CCE0C3F2594AE0E /* GraphicsRenderer-OSX.modulemap */,
-				BD293BB3DBC2BC96341DCDFF721ABED6 /* GraphicsRenderer-OSX.xcconfig */,
-				D5C6057E3B798D91CE72E07733F9088E /* GraphicsRenderer-OSX-dummy.m */,
-				C2129497CCCCE7FB6A6BF25BDCFFDAE4 /* GraphicsRenderer-OSX-prefix.pch */,
-				A798D045B021BBF0689BA133E30534FF /* GraphicsRenderer-OSX-umbrella.h */,
-				03BAEE2F9BBA92032E7BF53F405BBCA9 /* Info.plist */,
-				8D4A325EBA3EE14694BF7F2D44BF8B18 /* Info.plist */,
+				B2BB146062AF11E354D822177C951B9E /* GraphicsRenderer.podspec */,
+				D8DA49BA979B8C22DCF1035D327C17C3 /* LICENSE */,
+				02BD2FB8B9CD5BDE250EE2BBE9D368E0 /* README.md */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/GraphicsRenderer-OSX";
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		AE9615597734D7BFF87E66CB557A4C33 /* GraphicsRenderer */ = {
+			isa = PBXGroup;
+			children = (
+				63307B93A352C7381A597B1F2F31243B /* ImageRenderer.swift */,
+				6A892E6B0B9CBF758FD580C6CC8CEAE7 /* PDFRenderer.swift */,
+				0CB95B9EFBE9E02625E4574AB393CD8C /* Platforms.swift */,
+				73F80D271F1E82EF4A09AA8FCB72DB2B /* Renderer.swift */,
+				04DFF8A39A036A8B136F33D30A866083 /* RendererDrawable.swift */,
+				9B5DE19C481F29A2309DC594CA2E61E7 /* Pod */,
+				1D2C15F28C72025700B2DFC81BFD9BB3 /* Support Files */,
+			);
+			name = GraphicsRenderer;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		B63CBF56EF996989F83DF7A179B735FF /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				0C2B7A57D4F18D8F303D89702F874F45 /* Pods-iOSRenderer */,
-				179EA934B79B6099C300BDF2A11C13D4 /* Pods-MacOSRenderer */,
+				8FF284210A171C5FF8F81DFB051F14AF /* Pods-iOSRenderer */,
+				7A5736A442CD21D45F2E89EC5622E3BE /* Pods-MacOSRenderer */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		C1435E295E8546011D931DDA942C97CC /* GraphicsRenderer */ = {
-			isa = PBXGroup;
-			children = (
-				525BA3D6E91DCAACD195C2C6DFC468D0 /* Classes */,
-			);
-			path = GraphicsRenderer;
-			sourceTree = "<group>";
-		};
-		DEA55AE7EB4A1B09C009B82BA492BD02 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				B0C89EDC2EC27D60F4934F3C043A7D91 /* Foundation.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		7937DEE898310DD3F58E92911C2DB43D /* Headers */ = {
+		2842582D292F09C5A346E76B4F42B3ED /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D960955D7820767DBCA48A8F0DD7467 /* Pods-MacOSRenderer-umbrella.h in Headers */,
+				F35440021C359DEF706BC3FD534F08BA /* Pods-iOSRenderer-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9E9673638FF1788A175F39986EA2DD76 /* Headers */ = {
+		3020B13956CF93A26C61B05B24A02657 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F10DF831666E3CCB130164FAF40E71E /* GraphicsRenderer-iOS-umbrella.h in Headers */,
+				6ED694B3BA1A727945CFDEB10BE0B0C4 /* GraphicsRenderer-macOS-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E4464468DD0A8019C0504CFC6A0DE435 /* Headers */ = {
+		810212824D511913F349AF2F33497972 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79F0DE62462BF1839DFCD489EC072D4D /* Pods-iOSRenderer-umbrella.h in Headers */,
+				DC363F206D01879D6395EC4FEBD76421 /* Pods-MacOSRenderer-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E6D51D55FF6F8CED7D8752ACB98A542B /* Headers */ = {
+		E7111511D26A39E5FB9D5C8E37E1C2EE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E82B7CCA8C07415EA1389ABC0B443C5 /* GraphicsRenderer-OSX-umbrella.h in Headers */,
+				2A409551964625E589FFDE29FD78A7C4 /* GraphicsRenderer-iOS-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3C6F39CEB31D8CA002115B23D892B372 /* GraphicsRenderer-OSX */ = {
+		1A66F86C47166DB99B1C0A0E22B5279F /* Pods-MacOSRenderer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB60B44797E50E2BF012B44DCAF284BA /* Build configuration list for PBXNativeTarget "GraphicsRenderer-OSX" */;
+			buildConfigurationList = AF4F05ECAF86862D393A2924AC941277 /* Build configuration list for PBXNativeTarget "Pods-MacOSRenderer" */;
 			buildPhases = (
-				165729524640B216B5CB7FDADEAE79E3 /* Sources */,
-				B925FC649C8607BB0B1DDCA12BE40250 /* Frameworks */,
-				E6D51D55FF6F8CED7D8752ACB98A542B /* Headers */,
+				97CD01CCE23C6B7BA99A32D59EAEEB04 /* Sources */,
+				6AA0D61CC6992DDE3F47A8BD021D02F3 /* Frameworks */,
+				810212824D511913F349AF2F33497972 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = "GraphicsRenderer-OSX";
-			productName = "GraphicsRenderer-OSX";
-			productReference = 99A6083E60EDDD36E47E4D908EEE6748 /* GraphicsRenderer.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		B800D4C21A0313056B47C449528E80E2 /* Pods-MacOSRenderer */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2676B7BAE336EABCBD80B3EF6D675962 /* Build configuration list for PBXNativeTarget "Pods-MacOSRenderer" */;
-			buildPhases = (
-				52017510F7F8F2D8DA58EA203EBC0C40 /* Sources */,
-				941F16CB50668D5083290CDF81D54D70 /* Frameworks */,
-				7937DEE898310DD3F58E92911C2DB43D /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				80A2AA5B77BA902113B345AF8F0FFFDB /* PBXTargetDependency */,
+				B9BBB09BE25C95400745632B7470F67D /* PBXTargetDependency */,
 			);
 			name = "Pods-MacOSRenderer";
 			productName = "Pods-MacOSRenderer";
-			productReference = D5B4F904070D97D6F409E6AB8B677D62 /* Pods_MacOSRenderer.framework */;
+			productReference = CBB3E34B7BABA9685ADF4A068930F76D /* Pods_MacOSRenderer.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		C498E7DC6C8918C4B9415A1933BA0EBA /* GraphicsRenderer-iOS */ = {
+		3D280048800CA9A1FF4CB79F096834D8 /* Pods-iOSRenderer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ADD69F5578C9F594310B8076B7DFADA0 /* Build configuration list for PBXNativeTarget "GraphicsRenderer-iOS" */;
+			buildConfigurationList = AB5C9A9D0D67948417CA6BBA4139B3C5 /* Build configuration list for PBXNativeTarget "Pods-iOSRenderer" */;
 			buildPhases = (
-				71F20BB9289FCD569A4ABFFB8D5C6A93 /* Sources */,
-				B1C61C7D67F97DD4B2BA83A76FBCB044 /* Frameworks */,
-				9E9673638FF1788A175F39986EA2DD76 /* Headers */,
+				00286C871168B3089DDFEF172EB04670 /* Sources */,
+				83BE30A7E5673CFB829AD28E04FC0F2E /* Frameworks */,
+				2842582D292F09C5A346E76B4F42B3ED /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				936C68734DBC88BCD07115749171A45E /* PBXTargetDependency */,
+			);
+			name = "Pods-iOSRenderer";
+			productName = "Pods-iOSRenderer";
+			productReference = 3CA4D19F4A634D126B30A98BDC5D6834 /* Pods_iOSRenderer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3FC4E14C1556E2EB30BFB8E2C3C1D4A3 /* GraphicsRenderer-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F8CB5C319443E8569688DB478DE36ED /* Build configuration list for PBXNativeTarget "GraphicsRenderer-macOS" */;
+			buildPhases = (
+				2B89F1F8BBEC2131B8025488DF454B20 /* Sources */,
+				23AC407C8C897A5BBA0A2E19C25B0998 /* Frameworks */,
+				3020B13956CF93A26C61B05B24A02657 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GraphicsRenderer-macOS";
+			productName = "GraphicsRenderer-macOS";
+			productReference = 84DDE2602B538408654E3E90B77256A5 /* GraphicsRenderer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		659E36FE0A502BBDC16F4D6BC54A2D68 /* GraphicsRenderer-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50C1D2920702A83F961CBB12108AFE4A /* Build configuration list for PBXNativeTarget "GraphicsRenderer-iOS" */;
+			buildPhases = (
+				BB65F448648E45072C5D563EC95DB736 /* Sources */,
+				EA8284465409A5C1F8DE2ABB7E9C7D3F /* Frameworks */,
+				E7111511D26A39E5FB9D5C8E37E1C2EE /* Headers */,
 			);
 			buildRules = (
 			);
@@ -368,25 +384,7 @@
 			);
 			name = "GraphicsRenderer-iOS";
 			productName = "GraphicsRenderer-iOS";
-			productReference = DEDD9297A124825CFF2BEBA45E72678F /* GraphicsRenderer.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		C730219A0AFE2DF1C3122F866E923433 /* Pods-iOSRenderer */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C5600EAEF2CC5DAFA0928AD040CE63DB /* Build configuration list for PBXNativeTarget "Pods-iOSRenderer" */;
-			buildPhases = (
-				D7AF35B3B3B88D1989A4B2BFDC9D069E /* Sources */,
-				6F41B7F499970C358C88DCE5A0677F5B /* Frameworks */,
-				E4464468DD0A8019C0504CFC6A0DE435 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				024C4B9B43773C5EE72FC314A7746BF7 /* PBXTargetDependency */,
-			);
-			name = "Pods-iOSRenderer";
-			productName = "Pods-iOSRenderer";
-			productReference = A2D0831B3644D82F476212106902E933 /* Pods_iOSRenderer.framework */;
+			productReference = 99AA6674A09C117FC3ECD272D7E8D923 /* GraphicsRenderer.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -395,22 +393,8 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0920;
-				TargetAttributes = {
-					3C6F39CEB31D8CA002115B23D892B372 = {
-						LastSwiftMigration = 0900;
-					};
-					B800D4C21A0313056B47C449528E80E2 = {
-						LastSwiftMigration = 0900;
-					};
-					C498E7DC6C8918C4B9415A1933BA0EBA = {
-						LastSwiftMigration = 0900;
-					};
-					C730219A0AFE2DF1C3122F866E923433 = {
-						LastSwiftMigration = 0900;
-					};
-				};
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -420,319 +404,160 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 20F0358DDA0BC445966C456856AD4768 /* Products */;
+			productRefGroup = 4F68BD0B440E602D9801D51D61D04816 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C498E7DC6C8918C4B9415A1933BA0EBA /* GraphicsRenderer-iOS */,
-				3C6F39CEB31D8CA002115B23D892B372 /* GraphicsRenderer-OSX */,
-				C730219A0AFE2DF1C3122F866E923433 /* Pods-iOSRenderer */,
-				B800D4C21A0313056B47C449528E80E2 /* Pods-MacOSRenderer */,
+				659E36FE0A502BBDC16F4D6BC54A2D68 /* GraphicsRenderer-iOS */,
+				3FC4E14C1556E2EB30BFB8E2C3C1D4A3 /* GraphicsRenderer-macOS */,
+				3D280048800CA9A1FF4CB79F096834D8 /* Pods-iOSRenderer */,
+				1A66F86C47166DB99B1C0A0E22B5279F /* Pods-MacOSRenderer */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		165729524640B216B5CB7FDADEAE79E3 /* Sources */ = {
+		00286C871168B3089DDFEF172EB04670 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2A8A27E86EAECB623F12CE04E4CBB81 /* GraphicsRenderer-OSX-dummy.m in Sources */,
-				EBC99E051773EF4379E06A5D7FF9EF19 /* ImageRenderer.swift in Sources */,
-				BB22ABD01FB64F13BDB29140AF16186B /* PDFRenderer.swift in Sources */,
-				6A78FCBE9BB2821F9D8B9CF881E0FD31 /* Platforms.swift in Sources */,
-				16DD13C80EC5BBB5FBA27E0644292B35 /* Renderer.swift in Sources */,
-				6214B221D002D6537431BEB582A616FC /* RendererDrawable.swift in Sources */,
+				446F960EB57E090A624BBFC8C69290FB /* Pods-iOSRenderer-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		52017510F7F8F2D8DA58EA203EBC0C40 /* Sources */ = {
+		2B89F1F8BBEC2131B8025488DF454B20 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D48622F2613BA276F40AEAFE230216B9 /* Pods-MacOSRenderer-dummy.m in Sources */,
+				6A64BD0616DE62112FD2F6238B32C057 /* GraphicsRenderer-macOS-dummy.m in Sources */,
+				2D6A6B70C199D2027FD781804AEC8E6C /* ImageRenderer.swift in Sources */,
+				8EC78AA61C4E0BDD725ED523B8D0A2D1 /* PDFRenderer.swift in Sources */,
+				3B1646B5BC38D27EC0F1D91B0411DBA9 /* Platforms.swift in Sources */,
+				C995343260A2E043F0A22D5AE42200B2 /* Renderer.swift in Sources */,
+				718AE8B0E2E1A207DBB6B42AEBDAED38 /* RendererDrawable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		71F20BB9289FCD569A4ABFFB8D5C6A93 /* Sources */ = {
+		97CD01CCE23C6B7BA99A32D59EAEEB04 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCAC4E9EED5B0851AAAEE492A5B5D62C /* GraphicsRenderer-iOS-dummy.m in Sources */,
-				C008BE18F0F349984FDC3D62D3478FBF /* ImageRenderer.swift in Sources */,
-				83A85208969B9172FE00CC56B8D1EDC7 /* PDFRenderer.swift in Sources */,
-				823F2B5FE576F2D266414B87FF46026D /* Platforms.swift in Sources */,
-				15BAB3AEAD8A096FE9A632C47D158E00 /* Renderer.swift in Sources */,
-				C08D234562409373D15BC1DB454D3067 /* RendererDrawable.swift in Sources */,
+				7E2FBD27729A07EAD716A766E9BCF53A /* Pods-MacOSRenderer-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D7AF35B3B3B88D1989A4B2BFDC9D069E /* Sources */ = {
+		BB65F448648E45072C5D563EC95DB736 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				962A1B7689040E373FCD03FBABDB16BA /* Pods-iOSRenderer-dummy.m in Sources */,
+				26782C7F73BE89B84D587BD2D1346B2D /* GraphicsRenderer-iOS-dummy.m in Sources */,
+				BD2732B8B91B50A6985B52AA3E81C1ED /* ImageRenderer.swift in Sources */,
+				044BA92F4E7A8C165F88D52EBB61F03D /* PDFRenderer.swift in Sources */,
+				69628C840C16D7E5F93F55CBBE9E65D8 /* Platforms.swift in Sources */,
+				FBBD198B682AF1DE56CA88C5EFC85789 /* Renderer.swift in Sources */,
+				5E09CE6C68AE73CE6E43907CB20DB84D /* RendererDrawable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		024C4B9B43773C5EE72FC314A7746BF7 /* PBXTargetDependency */ = {
+		936C68734DBC88BCD07115749171A45E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "GraphicsRenderer-iOS";
-			target = C498E7DC6C8918C4B9415A1933BA0EBA /* GraphicsRenderer-iOS */;
-			targetProxy = 3FD5A5E3E10D15881224C81C4D940245 /* PBXContainerItemProxy */;
+			target = 659E36FE0A502BBDC16F4D6BC54A2D68 /* GraphicsRenderer-iOS */;
+			targetProxy = 3A7CFB658F5265868233FA543ABBFE31 /* PBXContainerItemProxy */;
 		};
-		80A2AA5B77BA902113B345AF8F0FFFDB /* PBXTargetDependency */ = {
+		B9BBB09BE25C95400745632B7470F67D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "GraphicsRenderer-OSX";
-			target = 3C6F39CEB31D8CA002115B23D892B372 /* GraphicsRenderer-OSX */;
-			targetProxy = D8458D01487A1313C0225934D1C92BF8 /* PBXContainerItemProxy */;
+			name = "GraphicsRenderer-macOS";
+			target = 3FC4E14C1556E2EB30BFB8E2C3C1D4A3 /* GraphicsRenderer-macOS */;
+			targetProxy = C3EF70D9DB48245A42B4102D7CD6A075 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		17EF0CDF978312AABA74B81AF8B030D5 /* Release */ = {
+		0ACCA5120D1935D545D66F579B4ACFB5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		38DC13A2DB126926258DE1E44DF9F4DD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD293BB3DBC2BC96341DCDFF721ABED6 /* GraphicsRenderer-OSX.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/GraphicsRenderer-OSX/GraphicsRenderer-OSX-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GraphicsRenderer-OSX/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/GraphicsRenderer-OSX/GraphicsRenderer-OSX.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = GraphicsRenderer;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6D4328AD482A20CDC8164CF05A8AC257 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A86A9A87A30C834BC62C4775F6CB06FB /* Pods-iOSRenderer.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-iOSRenderer/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-iOSRenderer/Pods-iOSRenderer.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_iOSRenderer;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		7040D878754D0F3BB3F5D23070FE47CB /* Debug */ = {
+		227CCB6B394C59476B9BA73BD078EAE0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 49C08FA63BB9DFE86E0E1678B4C359D9 /* GraphicsRenderer-iOS.xcconfig */;
+			baseConfigurationReference = 6357149D0658D04C6D216FC7F2C8DB9B /* Pods-MacOSRenderer.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/GraphicsRenderer-iOS/GraphicsRenderer-iOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GraphicsRenderer-iOS/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GraphicsRenderer-iOS/GraphicsRenderer-iOS.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = GraphicsRenderer;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		79E4A235718A487F8BEABA3D0D5A999D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 49C08FA63BB9DFE86E0E1678B4C359D9 /* GraphicsRenderer-iOS.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/GraphicsRenderer-iOS/GraphicsRenderer-iOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GraphicsRenderer-iOS/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GraphicsRenderer-iOS/GraphicsRenderer-iOS.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = GraphicsRenderer;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		959755C0799A64C967B6E9D8604E2B40 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 92F496BED77602DECE61AE94C4280870 /* Pods-iOSRenderer.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-iOSRenderer/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-iOSRenderer/Pods-iOSRenderer.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_iOSRenderer;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A647808578A7A141BC383DA2C9AF83BB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D1591CD6F461D9ED43D9E4D3BF484FB5 /* Pods-MacOSRenderer.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_VERSION = A;
-				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-MacOSRenderer/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MODULEMAP_FILE = "Target Support Files/Pods-MacOSRenderer/Pods-MacOSRenderer.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -740,42 +565,251 @@
 				PRODUCT_NAME = Pods_MacOSRenderer;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3DCD435CD015AE5D19F2932D511EAF85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9D765F64409E42D224DF846DD414911 /* Pods-iOSRenderer.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iOSRenderer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iOSRenderer/Pods-iOSRenderer.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_iOSRenderer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		440F81943B260A72774017BCFF1CF40E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BE7AA767DCF75F3AE282CF4107FDD3F /* GraphicsRenderer-macOS.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/GraphicsRenderer-macOS/GraphicsRenderer-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GraphicsRenderer-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/GraphicsRenderer-macOS/GraphicsRenderer-macOS.modulemap";
+				PRODUCT_NAME = GraphicsRenderer;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		BC36820911CA892B3F4793FBCA4CDBC1 /* Debug */ = {
+		51059FE2B24549272B9E0BF28E49C0B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 156D5FDCC0FDC67B65C3DD981DFAC15C /* Pods-iOSRenderer.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iOSRenderer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iOSRenderer/Pods-iOSRenderer.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_iOSRenderer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		609E5D316DCD215DE568F3159DF6F436 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BE7AA767DCF75F3AE282CF4107FDD3F /* GraphicsRenderer-macOS.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/GraphicsRenderer-macOS/GraphicsRenderer-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GraphicsRenderer-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/GraphicsRenderer-macOS/GraphicsRenderer-macOS.modulemap";
+				PRODUCT_NAME = GraphicsRenderer;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		76B6BA289CB18E7F5CF14A54A2F8C1B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BB7E82477D0C8761AC475D3C192585F /* Pods-MacOSRenderer.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-MacOSRenderer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-MacOSRenderer/Pods-MacOSRenderer.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MacOSRenderer;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A983C16A9B13D7F9B5D65293F1775097 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACED90E4C00477B5A80437134764C09C /* GraphicsRenderer-iOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GraphicsRenderer-iOS/GraphicsRenderer-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GraphicsRenderer-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GraphicsRenderer-iOS/GraphicsRenderer-iOS.modulemap";
+				PRODUCT_NAME = GraphicsRenderer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CAC17FAB75120DD3C79E9DDA4CD91A21 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -784,98 +818,64 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_VERSION = 3.0;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		D78A25B7203E18A97259C9C2AF6C01C0 /* Release */ = {
+		F7AE93D4B7E34C8107B69B75D90C2269 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD293BB3DBC2BC96341DCDFF721ABED6 /* GraphicsRenderer-OSX.xcconfig */;
+			baseConfigurationReference = ACED90E4C00477B5A80437134764C09C /* GraphicsRenderer-iOS.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/GraphicsRenderer-OSX/GraphicsRenderer-OSX-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GraphicsRenderer-OSX/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/GraphicsRenderer-iOS/GraphicsRenderer-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GraphicsRenderer-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/GraphicsRenderer-OSX/GraphicsRenderer-OSX.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GraphicsRenderer-iOS/GraphicsRenderer-iOS.modulemap";
 				PRODUCT_NAME = GraphicsRenderer;
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		F6CFF737AC57515699FDF3E83922E456 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A8CC33AA4D0CBC43459D4784B1CE6C5B /* Pods-MacOSRenderer.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-MacOSRenderer/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MODULEMAP_FILE = "Target Support Files/Pods-MacOSRenderer/Pods-MacOSRenderer.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_MacOSRenderer;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2676B7BAE336EABCBD80B3EF6D675962 /* Build configuration list for PBXNativeTarget "Pods-MacOSRenderer" */ = {
+		0F8CB5C319443E8569688DB478DE36ED /* Build configuration list for PBXNativeTarget "GraphicsRenderer-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F6CFF737AC57515699FDF3E83922E456 /* Debug */,
-				A647808578A7A141BC383DA2C9AF83BB /* Release */,
+				609E5D316DCD215DE568F3159DF6F436 /* Debug */,
+				440F81943B260A72774017BCFF1CF40E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -883,35 +883,35 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BC36820911CA892B3F4793FBCA4CDBC1 /* Debug */,
-				17EF0CDF978312AABA74B81AF8B030D5 /* Release */,
+				CAC17FAB75120DD3C79E9DDA4CD91A21 /* Debug */,
+				0ACCA5120D1935D545D66F579B4ACFB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ADD69F5578C9F594310B8076B7DFADA0 /* Build configuration list for PBXNativeTarget "GraphicsRenderer-iOS" */ = {
+		50C1D2920702A83F961CBB12108AFE4A /* Build configuration list for PBXNativeTarget "GraphicsRenderer-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7040D878754D0F3BB3F5D23070FE47CB /* Debug */,
-				79E4A235718A487F8BEABA3D0D5A999D /* Release */,
+				A983C16A9B13D7F9B5D65293F1775097 /* Debug */,
+				F7AE93D4B7E34C8107B69B75D90C2269 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C5600EAEF2CC5DAFA0928AD040CE63DB /* Build configuration list for PBXNativeTarget "Pods-iOSRenderer" */ = {
+		AB5C9A9D0D67948417CA6BBA4139B3C5 /* Build configuration list for PBXNativeTarget "Pods-iOSRenderer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				959755C0799A64C967B6E9D8604E2B40 /* Debug */,
-				6D4328AD482A20CDC8164CF05A8AC257 /* Release */,
+				3DCD435CD015AE5D19F2932D511EAF85 /* Debug */,
+				51059FE2B24549272B9E0BF28E49C0B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB60B44797E50E2BF012B44DCAF284BA /* Build configuration list for PBXNativeTarget "GraphicsRenderer-OSX" */ = {
+		AF4F05ECAF86862D393A2924AC941277 /* Build configuration list for PBXNativeTarget "Pods-MacOSRenderer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				38DC13A2DB126926258DE1E44DF9F4DD /* Debug */,
-				D78A25B7203E18A97259C9C2AF6C01C0 /* Release */,
+				76B6BA289CB18E7F5CF14A54A2F8C1B7 /* Debug */,
+				227CCB6B394C59476B9BA73BD078EAE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

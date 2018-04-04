@@ -1,9 +1,11 @@
 use_frameworks!
 
 target 'iOSRenderer' do
+  platform :ios, '8.0'
   pod 'GraphicsRenderer', :path => '../'
 end
 
 target 'MacOSRenderer' do
+  platform :osx, '10.10'
   pod 'GraphicsRenderer', :path => '../'    
 end

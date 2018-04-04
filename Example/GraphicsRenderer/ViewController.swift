@@ -50,7 +50,7 @@ class ViewController: UIViewController {
         imageView.image = image
     }
     
-    private func performDrawing<Context: RendererContext>(context: Context) {
+    private func performDrawing<Context>(context: Context) where Context: RendererContext, Context.ContextType: CGContext {
         let rect = context.format.bounds
         
         UIColor.white.setFill()

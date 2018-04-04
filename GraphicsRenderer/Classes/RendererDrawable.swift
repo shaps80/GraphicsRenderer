@@ -22,7 +22,7 @@
 
 import Foundation
 
-extension RendererDrawable {
+extension RendererDrawable where ContextType: CGContext {
     
     /// Fills the specified rect
     ///

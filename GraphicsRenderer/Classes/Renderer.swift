@@ -54,13 +54,8 @@ public protocol RendererFormat: class {
  *  Represents a drawable -- used to add drawing support to CGContext, RendererContext and UIGraphicsImageRendererContext
  */
 public protocol RendererDrawable {
-    
-    var cgContext: CGContext { get }
-    func fill(_ rect: CGRect)
-    func fill(_ rect: CGRect, blendMode: CGBlendMode)
-    func stroke(_ rect: CGRect)
-    func stroke(_ rect: CGRect, blendMode: CGBlendMode)
-    func clip(to rect: CGRect)
+    associatedtype ContextType
+    var cgContext: ContextType { get }
 }
 
 

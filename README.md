@@ -128,7 +128,7 @@ e.g. `cgContext.stroke(rect: myRect)`
 
 The library has the following requirements:
 
-* Swift 3.0
+* Swift 4.0
 * iOS 8.0+
 * OSX 10.10+
 
