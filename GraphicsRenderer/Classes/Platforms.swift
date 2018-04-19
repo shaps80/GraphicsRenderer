@@ -26,8 +26,8 @@
     public typealias Screen = NSScreen
 
     extension NSScreen {
-        public static var main: NSScreen {
-            return self.main
+        public static var mainScreen: NSScreen {
+            return NSScreen.main!
         }
 
         public var scale: CGFloat {
@@ -36,11 +36,11 @@
     }
     
     extension NSImage {
-        internal func pngRepresentation() -> Data? {
+        public var png: Data? {
             return NSBitmapImageRep(data: tiffRepresentation!)?.representation(using: .png, properties: [:])
         }
         
-        internal func jpgRepresentation(quality: CGFloat) -> Data? {
+        public func jpg(quality: CGFloat) -> Data? {
             return NSBitmapImageRep(data: tiffRepresentation!)?.representation(using: .jpeg, properties: [.compressionFactor: quality])
         }
     }
@@ -48,13 +48,19 @@
     import UIKit
     public typealias Image = UIImage
     public typealias Screen = UIScreen
+
+    extension UIScreen {
+        public static var mainScreen: UIScreen {
+            return .main
+        }
+    }
     
     extension UIImage {
-        internal func pngRepresentation() -> Data? {
+        public var png: Data? {
             return UIImagePNGRepresentation(self)
         }
         
-        internal func jpgRepresentation(quality: CGFloat) -> Data? {
+        public func jpg(quality: CGFloat) -> Data? {
             return UIImageJPEGRepresentation(self, quality)
         }
     }
