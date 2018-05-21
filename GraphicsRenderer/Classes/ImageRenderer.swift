@@ -202,7 +202,7 @@ public final class ImageRenderer: Renderer {
             bitmap.unlockFocus()
         #endif
         
-        #if os(iOS)
+        #if os(iOS) || os(tvOS)
             UIGraphicsBeginImageContextWithOptions(format.bounds.size, format.opaque, format.scale)
             let cgContext = CGContext.current!
             
