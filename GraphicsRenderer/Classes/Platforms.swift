@@ -50,6 +50,7 @@
     public typealias Screen = UIScreen
 
     extension UIScreen {
+        @nonobjc
         public static var mainScreen: UIScreen {
             return .main
         }
