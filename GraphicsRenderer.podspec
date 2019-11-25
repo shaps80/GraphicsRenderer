@@ -1,6 +1,7 @@
 Pod::Spec.new do |s|
     s.name             = "GraphicsRenderer"
-    s.version          = "1.4.0"
+    s.version          = "5"
+    s.swift_versions   = ["5.1"]
     s.summary          = "A drop-in UIGraphicsRenderer port -- CrossPlatform, Swift 4, Image & PDF"
     s.homepage         = "https://github.com/shaps80/GraphicsRenderer"
     s.license          = 'MIT'
@@ -11,4 +12,3 @@ Pod::Spec.new do |s|
     s.requires_arc     = true
     s.source_files     = 'GraphicsRenderer/Classes/**/*'
 end
-
