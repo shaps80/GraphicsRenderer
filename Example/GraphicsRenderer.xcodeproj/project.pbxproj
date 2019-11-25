@@ -227,13 +227,13 @@
 					549A32781DA16E6C00B1BFC9 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = V2CWYL9AN8;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1120;
 						ProvisioningStyle = Automatic;
 					};
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = V2CWYL9AN8;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -423,6 +423,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -445,6 +446,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.snippex.osx.MacOSRenderer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -570,7 +572,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.snippex.GraphicsRenderer-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -587,7 +589,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.snippex.GraphicsRenderer-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
