@@ -20,7 +20,11 @@
   THE SOFTWARE.
  */
 
-import Foundation
+#if os(iOS)
+    import UIKit
+#elseif os(OSX)
+    import AppKit
+#endif
 
 extension RendererDrawable where ContextType: CGContext {
     
