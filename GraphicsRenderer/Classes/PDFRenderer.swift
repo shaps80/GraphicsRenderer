@@ -197,7 +197,7 @@ public final class PDFRenderer: Renderer {
     /// Draws the PDF and writes is to the specified URL
     ///
     /// - Parameters:
-    ///   - url: The url to write tp
+    ///   - url: The url to write to
     ///   - actions: The drawing actions to perform
     /// - Throws: May throw
     public func writePDF(to url: URL, withActions actions: (PDFRendererContext) -> Void) throws {
