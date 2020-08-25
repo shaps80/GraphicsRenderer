@@ -68,7 +68,7 @@ public final class PDFRendererFormat: RendererFormat {
     /// - Parameters:
     ///   - documentInfo: The associated PSD document info
     ///   - flipped: If true, the context drawing will be flipped
-    public init(documentInfo: [String: Any], flipped: Bool) {
+    public init(documentInfo: [String: Any] = [:], flipped: Bool = false) {
         self.bounds = .zero
         self.documentInfo = documentInfo
         self.isFlipped = flipped
