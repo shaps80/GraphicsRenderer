@@ -68,7 +68,7 @@ public final class PDFRendererFormat: RendererFormat {
     /// - Parameters:
     ///   - documentInfo: The associated PSD document info
     ///   - flipped: If true, the context drawing will be flipped
-    public init(documentInfo: [String: Any], flipped: Bool) {
+    public init(documentInfo: [String: Any] = [:], flipped: Bool = false) {
         self.bounds = .zero
         self.documentInfo = documentInfo
         self.isFlipped = flipped
@@ -197,7 +197,7 @@ public final class PDFRenderer: Renderer {
     /// Draws the PDF and writes is to the specified URL
     ///
     /// - Parameters:
-    ///   - url: The url to write tp
+    ///   - url: The url to write to
     ///   - actions: The drawing actions to perform
     /// - Throws: May throw
     public func writePDF(to url: URL, withActions actions: (PDFRendererContext) -> Void) throws {
